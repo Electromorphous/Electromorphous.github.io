@@ -1,0 +1,746 @@
+@import './config';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Mono', monospace;
+}
+
+body {
+	display: inline;
+	background: $darkBackground;
+	color: $lightGrey;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+	@include responsive(phone) {
+		font-size: 0.9rem;
+	}
+	@include responsive(tabletSmall) {
+		font-size: 0.9rem;
+	}
+	@include responsive(tabletBig) {
+		font-size: 1rem;
+	}
+}
+
+.container {
+	position: relative;
+	margin: 20px 15%;
+	padding: 10px;
+
+	@include responsive(tabletBig) {
+		margin: 20px 10%;
+		padding: 5px;
+	}
+
+	@include responsive(tabletSmall) {
+		margin: 20px 8%;
+		padding: 5px;
+	}
+
+	@include responsive(phone) {
+		margin: 20px 5%;
+		padding: 2px;
+	}
+
+}
+
+.start-up {
+	color: $promptGreen;
+}
+
+.name {
+	display: flex;
+	.dollar-sign {
+		margin-right: 13px;
+
+		@include responsive(tabletBig) {
+			margin-right: 10px;
+		}
+
+		@include responsive(tabletSmall) {
+			margin-right: 9px;
+		}
+
+		@include responsive(phone) {
+			margin-right: 9px;
+		}
+	}
+	.text {
+		@include typingAnimation(3em, 2s, 0.7s, 5);
+	}
+	.blinker-parent {
+		animation: hide forwards;
+		animation-delay: 3s;
+		height: 15px;
+		margin-top: 2px;
+
+		.blinker {
+			border-right: 11px $lightGrey solid;
+			animation: blinking 1s steps(2, start) infinite;
+			width: 0px;
+			height: 23px;
+
+			@include responsive(tabletBig) {
+				border-right: 8px $lightGrey solid;
+				height: 17px;
+			}
+
+			@include responsive(tabletSmall) {
+				border-right: 7px $lightGrey solid;
+				height: 15px;
+			}
+
+			@include responsive(phone) {
+				border-right: 7px $lightGrey solid;
+				height: 15px;
+			}
+
+		}
+	}
+}
+
+.header-parent {
+	@include printingAnimation(60vh, 3s, 0.3s, 20);
+
+	.header {
+		text-align: center;
+		height: 50vh;
+	
+		.big-text {
+			text-align: center;
+			line-height: 1.2;
+			font-size: 0.9rem;
+			margin-top: 30px;
+
+			@include responsive(tabletBig) {
+				font-size: 0.67rem;
+				margin-top: 20px;
+			}
+
+			@include responsive(tabletSmall) {
+				font-size: 0.52rem;
+				margin-top: 10px;
+			}
+
+			@include responsive(phone) {
+				font-size: 0.5rem;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	@include responsive(tabletBig) {
+		@include printingAnimation(40vh, 3s, 0.3s, 20);
+	}
+
+	@include responsive(tabletSmall) {
+		@include printingAnimation(30vh, 3s, 0.3s, 20);
+	}
+
+	@include responsive(phone) {
+		@include printingAnimation(30vh, 3s, 0.3s, 20);
+	}
+
+}
+
+.repeater {
+
+	.question {
+		color: $promptGreen;
+		margin: 10px 0;
+		@include typingAnimation(23em, 1s, 1.3s, 25);
+	}
+
+	.options {
+		display: flex;
+		justify-content: space-between;
+		@include typingAnimation(100%, 2.5s, 0.05s, 30);
+
+		.button {
+			color: $buttonBlue;
+			border: none;
+			outline: none;
+			font-size: 1.2rem;
+			cursor: pointer;
+			margin-bottom: 10px;
+			background: none;
+			text-decoration: none;
+			&:hover {
+				color: white;
+			}
+			&:active {
+				color: $buttonBlue;
+			}
+			&:focus {
+				border: none;
+				outline: none;
+			}
+
+			@include responsive(tabletBig) {
+				font-size: 1rem;
+			}
+
+			@include responsive(tabletSmall) {
+				font-size: 0.85rem;
+			}
+
+			@include responsive(phone) {
+				font-size: 0.8rem;
+			}
+
+		}
+	}
+
+	.prompt {
+		font-size: 1.1rem;
+		margin-top: 20px;
+		.username {
+			color: $promptCyan;
+		}
+		.tilda {
+			color: $promptYellow;
+		}
+
+		@include responsive(tabletBig) {
+			font-size: 0.9rem;
+		}
+
+		@include responsive(tabletSmall) {
+			font-size: 0.8rem;
+		}
+		
+		@include responsive(phone) {
+			font-size: 0.75rem;
+		}
+		
+	}
+
+	.input-text {
+		font-size: 1.1rem;
+		display: flex;
+		margin-bottom: 10px;
+
+		.dollar-sign {
+			margin-right: 11px;
+
+			@include responsive(tabletBig) {
+				margin-right: 9px;
+			}
+	
+			@include responsive(tabletSmall) {
+				margin-right: 8px;
+			}
+
+			@include responsive(phone) {
+				margin-right: 7px;
+			}
+
+		}
+		.text-info {
+			@include typingAnimation(8.7em, 1s, 0.7s, 14);
+		}
+		.text-projects {
+			@include typingAnimation(11em, 1s, 0.7s, 14);
+		}
+		.text-links {
+			@include typingAnimation(9.2em, 1s, 0.7s, 14);
+		}
+		.blinker-parent {
+			animation: hide forwards;
+			animation-delay: 3s;
+			height: 15px;
+			margin-top: 2px;
+
+			.blinker {
+				border-right: 11px $lightGrey solid;
+				animation: blinking 1s steps(2, start) infinite;
+				width: 0px;
+
+				@include responsive(tabletBig) {
+					border-right: 8px $lightGrey solid;
+					height: 17px;
+				}
+	
+				@include responsive(tabletSmall) {
+					border-right: 7px $lightGrey solid;
+					height: 15px;
+				}
+
+				@include responsive(phone) {
+					border-right: 7px $lightGrey solid;
+					height: 15px;
+				}
+
+			}
+		}
+
+		@include responsive(tabletBig) {
+			font-size: 0.9rem;
+		}
+
+		@include responsive(tabletSmall) {
+			font-size: 0.8rem;
+		}
+
+		@include responsive(phone) {
+			font-size: 0.8rem;
+		}
+
+	}
+
+	.info {
+
+		margin-bottom: 50px;
+
+		.about {
+
+			@include printingAnimation(auto, 2s, 0s, 1);
+
+			margin-top: 30px;
+
+			h4 {
+				padding: 5px;
+				font-weight: 300;
+			}
+			p {
+				font-size: 1rem;
+				padding: 10px;
+				white-space: normal;
+				overflow: visible;
+
+				@include responsive(tabletBig) {
+					font-size: 0.9rem;
+				}
+
+				@include responsive(tabletSmall) {
+					font-size: 0.8rem;
+				}
+
+				@include responsive(phone) {
+					font-size: 0.75rem;
+				}
+
+			}
+			.tech-logos {
+				font-size: 2px;
+				font-weight: 700;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				@include responsive(tabletSmall) {
+					font-size: 1px;
+					font-weight: 100;
+				}
+
+				@include responsive(phone) {
+					font-size: 1px;
+					font-weight: 100;
+				}
+
+				.logo-parent {
+					margin: 30px auto;
+					width: 250px;
+					text-align: center;
+
+					@include responsive(tabletSmall) {
+						width: 130px;
+					}
+
+					@include responsive(phone) {
+						width: 120px;
+					}
+				}
+
+				.logo {
+					overflow: hidden;
+					margin: auto;
+				}
+
+				.html-logo {
+					color: $htmlOrange;
+					border-radius: 0 0 40px 40px;
+					text-shadow: 0 0 1px $htmlOrange;
+					width: 130px;
+
+					@include responsive(phone) {
+						width: 69px;
+						border-radius: 0 0 25px 25px;
+					}
+					@include responsive(tabletSmall) {
+						width: 69px;
+						border-radius: 0 0 25px 25px;
+					}
+				}
+
+				.css-logo {
+					color: $cssBlue;
+					border-radius: 0 0 40px 40px;
+					text-shadow: 0 0 1px $cssBlue;
+					width: 130px;
+
+					@include responsive(phone) {
+						width: 69px;
+						border-radius: 0 0 25px 25px;
+					}
+					@include responsive(tabletSmall) {
+						width: 69px;
+						border-radius: 0 0 25px 25px;
+					}
+					
+				}
+
+				.js-logo {
+					color: $javascriptYellow;
+					border-radius: 0 0 40px 40px;
+					text-shadow: 0 0 1px $javascriptYellow;
+					width: 130px;
+
+					@include responsive(phone) {
+						width: 69px;
+						border-radius: 0 0 25px 25px;
+					}
+					@include responsive(tabletSmall) {
+						width: 69px;
+						border-radius: 0 0 25px 25px;
+					}
+					
+				}
+
+				.sass-logo {
+					color: $sassPink;
+					border-radius: 15px;
+					text-shadow: 0 0 1px $sassPink;
+					width: 165px;
+
+					@include responsive(phone) {
+						width: 75px;
+						border-radius: 10px;
+					}
+					@include responsive(tabletSmall) {
+						width: 75px;
+						border-radius: 10px;
+					}
+					
+				}
+
+				.react-logo {
+					color: $reactBlue;
+					border-radius: 30px;
+					text-shadow: 0 0 1px $reactBlue;
+					width: 140px;
+
+					@include responsive(phone) {
+						width: 70px;
+						border-radius: 15px;
+					}
+					@include responsive(tabletSmall) {
+						width: 70px;
+						border-radius: 15px;
+					}
+					
+				}
+
+				.npm-logo {
+					color: $npmRed;
+					text-shadow: 0 0 1px $npmRed;
+					width: 180px;
+
+					@include responsive(phone) {
+						width: 90px;
+					}
+					@include responsive(tabletSmall) {
+						width: 90px;
+					}
+					
+				}
+
+				.git-logo {
+					color: $gitRed;
+					border-radius: 100px;
+					text-shadow: 0 0 1px $gitRed;
+					width: 135px;
+
+					@include responsive(phone) {
+						width: 70px;
+						border-radius: 50px;
+					}
+					@include responsive(tabletSmall){
+						width: 70px;
+						border-radius: 50px;
+					}
+					
+				}
+
+				.github-logo {
+					border-radius: 77px;
+					text-shadow: 0 0 1px;
+					width: 140px;
+
+					@include responsive(phone) {
+						width: 70px;
+						border-radius: 50px;
+					}
+					@include responsive(tabletSmall) {
+						width: 70px;
+						border-radius: 50px;
+					}
+					
+				}
+
+				.unity-logo {
+					border-radius: 20px;
+					text-shadow: 0 0 1px;
+					width: 120px;
+
+					@include responsive(phone) {
+						width: 65px;
+						border-radius: 10px;
+					}
+					@include responsive(tabletSmall) {
+						width: 65px;
+						border-radius: 10px;
+					}
+					
+				}
+
+				.python-logo {
+					color: $pythonBlue;
+					border-radius: 50px;
+					width: 125px;
+
+					@include responsive(phone) {
+						width: 65px;
+						border-radius: 30px;
+					}
+					@include responsive(tabletSmall) {
+						width: 65px;
+						border-radius: 30px;
+					}
+					
+				}
+
+				.flask-logo {
+					border-radius: 10px;
+					width: 160px;
+
+					@include responsive(phone) {
+						width: 85px;
+						border-radius: 10px;
+					}
+					@include responsive(tabletSmall) {
+						width: 85px;
+						border-radius: 10px;
+					}
+					
+				}
+
+				.vscode-logo {
+					color: $vscodeBlue;
+					border-radius: 30px;
+					text-shadow: 0 0 1px $vscodeBlue;
+					width: 120px;
+
+					@include responsive(phone) {
+						width: 70px;
+						border-radius: 20px;
+					}
+					@include responsive(tabletSmall) {
+						width: 70px;
+						border-radius: 20px;
+					}
+					
+				}
+			}
+		}
+
+		.projects {
+
+			@include printingAnimation(auto, 2s, 0s, 1);
+			margin: 20px;
+
+			.project {
+
+				margin-bottom: 30px;
+				padding: 20px 0;
+				border-bottom: 1px solid white;
+
+				h1 {
+					font-size: 2.5rem;
+					font-weight: 400;
+					color: $headingGrey;
+					margin-bottom: 10px;
+
+					@include responsive(tabletBig) {
+						font-size: 2.2rem;
+						margin-bottom: 5px;
+					}
+
+					@include responsive(tabletSmall) {
+						font-size: 2.1rem;
+						margin-bottom: 0;
+					}
+
+					@include responsive(phone) {
+						font-size: 2rem;
+						margin-bottom: 0;
+					}
+
+				}
+
+				a {
+					color: $linkMagenta;
+					font-size: 1rem;
+					font-weight: 400;
+					text-decoration: none;
+
+					&:hover {
+						color: white;
+					}
+					&:active {
+						color: $linkMagenta;
+					}
+
+					@include responsive(tabletBig) {
+						font-size: 0.9rem;
+					}
+
+					@include responsive(tabletSmall) {
+						font-size: 0.8rem;
+					}
+
+					@include responsive(phone) {
+						font-size: 0.75rem;
+					}
+
+				}
+
+				p {
+					font-size: 1.2rem;
+					padding: 0 20px;
+					margin-top: 20px;
+					white-space: normal;
+
+					@include responsive(tabletBig) {
+						font-size: 1rem;
+					}
+
+					@include responsive(tabletSmall) {
+						margin-top: 15px;
+						font-size: 0.9rem;
+					}
+
+					@include responsive(phone) {
+						margin-top: 10px;
+						font-size: 0.8rem;
+					}
+
+				}
+			}
+		}
+
+		.links {
+
+			@include printingAnimation(auto, 2s, 0s, 1);
+			margin: 50px 0 70px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+
+			a {
+				.icon {
+					font-size: 50px;
+					color: white;
+
+					@include responsive(tabletBig) {
+						font-size: 40px;
+					}
+
+					@include responsive(tabletSmall) {
+						font-size: 30px;
+					}
+
+					@include responsive(phone) {
+						font-size: 25px;
+					}
+
+				}
+
+				.fa-envelope:hover {
+					color: $mailRed;
+				}
+				.fa-github:hover {
+					color: $githubIconGreen;
+				}
+				.fa-linkedin-square:hover {
+					color: $linkedinBlue;
+				}
+				.fa-twitter:hover {
+					color: $twitterBlue;
+				}
+				.fa-youtube-play:hover {
+					color: $youtubeRed;
+				}
+			}
+		}
+	}
+
+	.footer {
+		@include printingAnimation(30px, 2s, 0s, 1);
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		font-size: 10px;
+
+		span {
+			font-size: 15px;
+
+			@include responsive(tabletBig) {
+				font-size: 10px;
+			}
+			@include responsive(tabletSmall) {
+				font-size: 8px;
+			}
+			@include responsive(phone) {
+				font-size: 7px;
+			}
+		}
+
+		@include responsive(tabletBig) {
+			font-size: 8px;
+		}
+		@include responsive(tabletSmall) {
+			font-size: 6px;
+		}
+		@include responsive(phone) {
+			font-size:5px;
+		}
+	}
+}
+
+@keyframes blinking {
+	to {
+		visibility: hidden;
+	}
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes print {
+	from {
+		height: 0;
+	}
+}
+@keyframes hide {
+	to {
+		opacity: 0;
+	}
+}
