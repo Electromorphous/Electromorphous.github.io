@@ -209,7 +209,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .header-parent .header .big-text {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     margin-top: 10px;
   }
 }
@@ -615,14 +615,12 @@ body {
 @media screen and (min-width: 500px) and (max-width: 768px) {
   .repeater .info .about .tech-logos {
     font-size: 1px;
-    font-weight: 100;
   }
 }
 
 @media screen and (max-width: 500px) {
   .repeater .info .about .tech-logos {
     font-size: 1px;
-    font-weight: 100;
   }
 }
 
