@@ -156,7 +156,7 @@ body {
 }
 
 .header-parent {
-  height: 60vh;
+  height: 400px;
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: print 0.3s steps(20) 3s both;
@@ -168,7 +168,7 @@ body {
     height: 0;
   }
   to {
-    height: 60vh;
+    height: 400px;
   }
 }
 
@@ -177,7 +177,7 @@ body {
     height: 0;
   }
   to {
-    height: 60vh;
+    height: 400px;
   }
 }
 
@@ -216,7 +216,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1170px) {
   .header-parent {
-    height: 40vh;
+    height: 300px;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: print 0.3s steps(20) 3s both;
@@ -227,7 +227,7 @@ body {
       height: 0;
     }
     to {
-      height: 40vh;
+      height: 300px;
     }
   }
   @keyframes print {
@@ -235,14 +235,14 @@ body {
       height: 0;
     }
     to {
-      height: 40vh;
+      height: 300px;
     }
   }
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
   .header-parent {
-    height: 30vh;
+    height: 200px;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: print 0.3s steps(20) 3s both;
@@ -253,7 +253,7 @@ body {
       height: 0;
     }
     to {
-      height: 30vh;
+      height: 200px;
     }
   }
   @keyframes print {
@@ -261,14 +261,14 @@ body {
       height: 0;
     }
     to {
-      height: 30vh;
+      height: 200px;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
   .header-parent {
-    height: 30vh;
+    height: 150px;
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: print 0.3s steps(20) 3s both;
@@ -279,7 +279,7 @@ body {
       height: 0;
     }
     to {
-      height: 30vh;
+      height: 150px;
     }
   }
   @keyframes print {
@@ -287,7 +287,7 @@ body {
       height: 0;
     }
     to {
-      height: 30vh;
+      height: 150px;
     }
   }
 }
