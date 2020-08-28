@@ -1,0 +1,85 @@
+// general
+$darkBackground: black;
+$promptGreen: rgb(16, 231, 16);
+$buttonBlue: rgb(127, 135, 252);
+$promptCyan: rgb(23, 208, 214);
+$promptYellow: yellow;
+$lightGrey: #ddd;
+$headingGrey: rgb(139, 177, 212);
+$linkMagenta: rgb(248, 179, 88);
+
+// logos
+$htmlOrange: #f5865e;
+$cssBlue: #5cb5fd;
+$javascriptYellow: #eadb55;
+$sassPink: #ff55cc;
+$reactBlue: #52c1f1;
+$npmRed: #fb4949;
+$gitRed: #f56156;
+$pythonBlue: #74c0fd;
+$vscodeBlue: #4866ff;
+
+// icons
+$mailRed: #f54d4d;
+$githubIconGreen: #29da36;
+$linkedinBlue: #439cfb;
+$twitterBlue: #00d0ff;
+$youtubeRed: #f92525;
+
+// mixins
+@mixin typingAnimation ($textWidth, $delay, $typingTime, $steps) {
+	white-space: nowrap;
+	overflow: hidden;
+	width: $textWidth;
+	animation: typing $typingTime steps($steps) $delay both;
+
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: $textWidth;
+		}
+	}
+}
+
+@mixin printingAnimation ($textHeight, $delay, $printingTime, $steps) {
+	height: $textHeight;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: print $printingTime steps($steps) $delay both;
+
+	@keyframes print {
+		from {
+			height: 0;
+		}
+		to {
+			height: $textHeight;
+		}
+	}
+}
+
+
+// media mixins
+@mixin responsive($screenSize) {
+	@if $screenSize == phone {
+		@media screen and (max-width: 500px) {
+			@content;
+		}
+	}
+	@else if $screenSize == tabletSmall {
+		@media screen and (min-width: 500px) and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $screenSize == tabletBig {
+		@media screen and (min-width: 768px) and (max-width: 1170px) {
+			@content;
+		}
+	}
+	@else if $screenSize == desktop {
+		@media screen and (min-width: 1170px) {
+			@content;
+		}
+	}
+}
