@@ -1,9 +1,9 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 body {
@@ -96,7 +96,7 @@ body {
   overflow: hidden;
   width: 3em;
   -webkit-animation: typing 0.7s steps(5) 2s both;
-          animation: typing 0.7s steps(5) 2s both;
+  animation: typing 0.7s steps(5) 2s both;
 }
 
 @-webkit-keyframes typing {
@@ -119,9 +119,9 @@ body {
 
 .name .blinker-parent {
   -webkit-animation: hide forwards;
-          animation: hide forwards;
+  animation: hide forwards;
   -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
   height: 15px;
   margin-top: 2px;
 }
@@ -129,7 +129,7 @@ body {
 .name .blinker-parent .blinker {
   border-right: 11px #ddd solid;
   -webkit-animation: blinking 1s steps(2, start) infinite;
-          animation: blinking 1s steps(2, start) infinite;
+  animation: blinking 1s steps(2, start) infinite;
   width: 0px;
   height: 23px;
 }
@@ -160,7 +160,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: print 0.3s steps(20) 3s both;
-          animation: print 0.3s steps(20) 3s both;
+  animation: print 0.3s steps(20) 3s both;
 }
 
 @-webkit-keyframes print {
@@ -209,7 +209,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .header-parent .header .big-text {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
     margin-top: 10px;
   }
 }
@@ -220,7 +220,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: print 0.3s steps(20) 3s both;
-            animation: print 0.3s steps(20) 3s both;
+    animation: print 0.3s steps(20) 3s both;
   }
   @-webkit-keyframes print {
     from {
@@ -246,7 +246,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: print 0.3s steps(20) 3s both;
-            animation: print 0.3s steps(20) 3s both;
+    animation: print 0.3s steps(20) 3s both;
   }
   @-webkit-keyframes print {
     from {
@@ -272,7 +272,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     -webkit-animation: print 0.3s steps(20) 3s both;
-            animation: print 0.3s steps(20) 3s both;
+    animation: print 0.3s steps(20) 3s both;
   }
   @-webkit-keyframes print {
     from {
@@ -299,7 +299,7 @@ body {
   overflow: hidden;
   width: 23em;
   -webkit-animation: typing 1.3s steps(25) 1s both;
-          animation: typing 1.3s steps(25) 1s both;
+  animation: typing 1.3s steps(25) 1s both;
 }
 
 @keyframes typing {
@@ -316,13 +316,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
   -webkit-animation: typing 0.05s steps(30) 2.5s both;
-          animation: typing 0.05s steps(30) 2.5s both;
+  animation: typing 0.05s steps(30) 2.5s both;
 }
 
 @keyframes typing {
@@ -442,7 +442,7 @@ body {
   overflow: hidden;
   width: 8.7em;
   -webkit-animation: typing 0.7s steps(14) 1s both;
-          animation: typing 0.7s steps(14) 1s both;
+  animation: typing 0.7s steps(14) 1s both;
 }
 
 @keyframes typing {
@@ -459,7 +459,7 @@ body {
   overflow: hidden;
   width: 11em;
   -webkit-animation: typing 0.7s steps(14) 1s both;
-          animation: typing 0.7s steps(14) 1s both;
+  animation: typing 0.7s steps(14) 1s both;
 }
 
 @keyframes typing {
@@ -476,7 +476,7 @@ body {
   overflow: hidden;
   width: 9.2em;
   -webkit-animation: typing 0.7s steps(14) 1s both;
-          animation: typing 0.7s steps(14) 1s both;
+  animation: typing 0.7s steps(14) 1s both;
 }
 
 @keyframes typing {
@@ -490,9 +490,9 @@ body {
 
 .repeater .input-text .blinker-parent {
   -webkit-animation: hide forwards;
-          animation: hide forwards;
+  animation: hide forwards;
   -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
   height: 15px;
   margin-top: 2px;
 }
@@ -500,7 +500,7 @@ body {
 .repeater .input-text .blinker-parent .blinker {
   border-right: 11px #ddd solid;
   -webkit-animation: blinking 1s steps(2, start) infinite;
-          animation: blinking 1s steps(2, start) infinite;
+  animation: blinking 1s steps(2, start) infinite;
   width: 0px;
 }
 
@@ -552,7 +552,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: print 0s steps(1) 2s both;
-          animation: print 0s steps(1) 2s both;
+  animation: print 0s steps(1) 2s both;
   margin-top: 30px;
 }
 
@@ -603,13 +603,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
@@ -896,7 +896,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: print 0s steps(1) 2s both;
-          animation: print 0s steps(1) 2s both;
+  animation: print 0s steps(1) 2s both;
   margin: 20px;
 }
 
@@ -1008,16 +1008,16 @@ body {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: print 0s steps(1) 2s both;
-          animation: print 0s steps(1) 2s both;
+  animation: print 0s steps(1) 2s both;
   margin: 50px 0 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 @keyframes print {
@@ -1077,12 +1077,12 @@ body {
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: print 0s steps(1) 2s both;
-          animation: print 0s steps(1) 2s both;
+  animation: print 0s steps(1) 2s both;
   position: absolute;
   bottom: 0px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   font-size: 10px;
 }
 
