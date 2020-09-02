@@ -101,7 +101,7 @@ body {
 }
 
 .header-parent {
-  @include printingAnimation(400px, 3s, 0.3s, 20);
+  @include printingAnimation(380px, 3s, 0.3s, 20);
 
   .header {
     text-align: center;

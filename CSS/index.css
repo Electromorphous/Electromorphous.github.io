@@ -156,7 +156,7 @@ body {
 }
 
 .header-parent {
-  height: 400px;
+  height: 380px;
   white-space: nowrap;
   overflow: hidden;
   -webkit-animation: print 0.3s steps(20) 3s both;
