@@ -1,2 +1,2 @@
 # Portfolio
-## A repository for [my Portfolio](https://electromorphous.github.io)
+### A repository for [my portfolio](https://electromorphous.github.io)
