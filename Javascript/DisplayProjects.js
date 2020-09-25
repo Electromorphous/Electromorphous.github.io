@@ -66,7 +66,7 @@ export default function DisplayProjects() {
     makeProject(
       "NotShopify",
       "https://github.com/Electromorphous/NotShopify",
-      "A mockup of the Shopify landing page, made using HTML, Sass and nothing more than 10 lines of Javascript",
+      "A mockup of the Shopify landing page, made using HTML, Sass and nothing more than 10 lines of Javascript.",
       "Real website",
       "https://shopify.com/free-trial",
       "View mockup page",
