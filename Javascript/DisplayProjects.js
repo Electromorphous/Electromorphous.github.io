@@ -64,6 +64,16 @@ export default function DisplayProjects() {
 
   projects.appendChild(
     makeProject(
+      "Pokédex",
+      "https://github.com/Electromorphous/Pokedex",
+      "A Pokédex made using the PokéApi with the purpose of practising React.js and other useful React packages from npm.",
+      "View app",
+      "https://electromorphous.github.io/Pokedex"
+    )
+  );
+
+  projects.appendChild(
+    makeProject(
       "NotShopify",
       "https://github.com/Electromorphous/NotShopify",
       "A mockup of the Shopify landing page, made using HTML, Sass and nothing more than 10 lines of Javascript.",
