@@ -16,7 +16,7 @@ export default function DisplayAbout () {
 	const place = document.createElement("h4");
 	place.textContent = " 📍 : Bangalore, India";
 	const summary = document.createElement("p");
-	summary.textContent = "Hi! I'm a 20yo CS engineering student, learning web development and making responsive web pages and web apps. I'm working towards getting freelancing projects, internships and junior dev jobs to build professional work experience.";
+	summary.textContent = "Hi! I'm a 21yo CS engineering student, learning web development and making responsive web pages and web apps. I'm looking for freelance projects, internships and junior dev jobs to build professional work experience.";
 	const techHeader = document.createElement("p");
 	techHeader.textContent = " Tools I have experience with... ";
 
