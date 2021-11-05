@@ -47,7 +47,7 @@ const makeProject = (
   projectInfo.appendChild(sourceCode);
 
   const description = document.createElement("p");
-  description.textContent = descriptionText;
+  description.innerHTML = descriptionText;
   projectInfo.appendChild(description);
 
   return projectInfo;
@@ -66,7 +66,7 @@ export default function DisplayProjects() {
     makeProject(
       "Pokédex",
       "https://github.com/Electromorphous/Pokedex",
-      "A Pokédex made using the PokéApi.",
+      "A Pokédex made using the <a href='https://restcountries.com/' target='_blank'>PokéApi</a>.",
       "View app",
       "https://electromorphous.github.io/Pokedex"
     )
@@ -76,7 +76,7 @@ export default function DisplayProjects() {
     makeProject(
       "Countries",
       "https://github.com/Electromorphous/Countries",
-      "A WebApp made using the REST Countries API.",
+      "A WebApp made using the <a href='https://restcountries.com/' target='_blank'>REST Countries API</a>.",
       "View app",
       "https://electromorphous.github.io/Countries"
     )
