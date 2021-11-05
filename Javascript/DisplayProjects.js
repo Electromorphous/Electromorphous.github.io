@@ -97,7 +97,7 @@ export default function DisplayProjects() {
     makeProject(
       "ShootLasers",
       "https://github.com/Electromorphous/SpaceShooter",
-      "A space-shooter game made in Unity using C#. This was only made to gain some experience in Unity, not necessarily for games.",
+      "A space-shooter game made in Unity using C#.",
       "Play on itch.io",
       "https://electromorphous.itch.io/shoot-lasers",
       "Play now in the browser!",
