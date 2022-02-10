@@ -12,7 +12,7 @@ export default function DisplayAbout () {
 	const about = document.createElement("div");
 	about.className = "about";
 	const name = document.createElement("h4");
-	name.textContent = " 🏷️: Aseer Uz Zaman";
+	name.textContent = " 🏷️ : Aseer Uz Zaman";
 	const place = document.createElement("h4");
 	place.textContent = " 📍 : Bangalore, India";
 	const summary = document.createElement("p");
