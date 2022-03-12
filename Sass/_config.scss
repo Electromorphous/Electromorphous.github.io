@@ -21,65 +21,61 @@ $vscodeBlue: #4866ff;
 
 // icons
 $mailRed: #f54d4d;
-$githubIconGreen: #29da36;
+$githubIconGrey: #777;
 $linkedinBlue: #439cfb;
 $twitterBlue: #00d0ff;
 $youtubeRed: #f92525;
 
 // mixins
-@mixin typingAnimation ($textWidth, $delay, $typingTime, $steps) {
-	white-space: nowrap;
-	overflow: hidden;
-	width: $textWidth;
-	animation: typing $typingTime steps($steps) $delay both;
+@mixin typingAnimation($textWidth, $delay, $typingTime, $steps) {
+  white-space: nowrap;
+  overflow: hidden;
+  width: $textWidth;
+  animation: typing $typingTime steps($steps) $delay both;
 
-	@keyframes typing {
-		from {
-			width: 0;
-		}
-		to {
-			width: $textWidth;
-		}
-	}
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: $textWidth;
+    }
+  }
 }
 
-@mixin printingAnimation ($textHeight, $delay, $printingTime, $steps) {
-	height: $textHeight;
-	white-space: nowrap;
-	overflow: hidden;
-	animation: print $printingTime steps($steps) $delay both;
+@mixin printingAnimation($textHeight, $delay, $printingTime, $steps) {
+  height: $textHeight;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: print $printingTime steps($steps) $delay both;
 
-	@keyframes print {
-		from {
-			height: 0;
-		}
-		to {
-			height: $textHeight;
-		}
-	}
+  @keyframes print {
+    from {
+      height: 0;
+    }
+    to {
+      height: $textHeight;
+    }
+  }
 }
-
 
 // media mixins
 @mixin responsive($screenSize) {
-	@if $screenSize == phone {
-		@media screen and (max-width: 500px) {
-			@content;
-		}
-	}
-	@else if $screenSize == tabletSmall {
-		@media screen and (min-width: 500px) and (max-width: 768px) {
-			@content;
-		}
-	}
-	@else if $screenSize == tabletBig {
-		@media screen and (min-width: 768px) and (max-width: 1170px) {
-			@content;
-		}
-	}
-	@else if $screenSize == desktop {
-		@media screen and (min-width: 1170px) {
-			@content;
-		}
-	}
+  @if $screenSize == phone {
+    @media screen and (max-width: 500px) {
+      @content;
+    }
+  } @else if $screenSize == tabletSmall {
+    @media screen and (min-width: 500px) and (max-width: 768px) {
+      @content;
+    }
+  } @else if $screenSize == tabletBig {
+    @media screen and (min-width: 768px) and (max-width: 1170px) {
+      @content;
+    }
+  } @else if $screenSize == desktop {
+    @media screen and (min-width: 1170px) {
+      @content;
+    }
+  }
 }
