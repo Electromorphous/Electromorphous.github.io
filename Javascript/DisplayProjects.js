@@ -64,6 +64,16 @@ export default function DisplayProjects() {
 
   projects.appendChild(
     makeProject(
+      "CustomWheels",
+      "https://github.com/Electromorphous/CustomWheels",
+      "A Web application that lets you view and customise 3D models of cars. Made using <a href='https://threejs.org/' target='_blank'>Three.js</a> and <a href='https://www.npmjs.com/package/@react-three/fiber' target='_blank'>react-three</a>.",
+      "View app",
+      "https://electromorphous.github.io/CustomWheels"
+    )
+  );
+
+  projects.appendChild(
+    makeProject(
       "Pokédex",
       "https://github.com/Electromorphous/Pokedex",
       "A Pokédex made using the <a href='https://restcountries.com/' target='_blank'>PokéApi</a>.",
@@ -84,17 +94,6 @@ export default function DisplayProjects() {
 
   projects.appendChild(
     makeProject(
-      "NotShopify",
-      "https://github.com/Electromorphous/NotShopify",
-      "A mockup of the Shopify landing page, made using HTML, Sass and nothing more than 10 lines of Javascript.",
-      "Real website",
-      "https://shopify.com/free-trial",
-      "View mockup page",
-      "https://electromorphous.github.io/NotShopify/"
-    )
-  );
-  projects.appendChild(
-    makeProject(
       "ShootLasers",
       "https://github.com/Electromorphous/SpaceShooter",
       "A space-shooter game made in Unity using C#.",
@@ -104,6 +103,7 @@ export default function DisplayProjects() {
       "../ShootLasers/index.html"
     )
   );
+
   projects.appendChild(
     makeProject(
       "FlaskUnityApp",
