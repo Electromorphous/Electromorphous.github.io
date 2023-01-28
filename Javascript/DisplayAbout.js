@@ -2,6 +2,7 @@ import {
   htmlFunction,
   cssFunction,
   jsFunction,
+  tsFunction,
   sassFunction,
   reactFunction,
   npmFunction,
@@ -9,7 +10,6 @@ import {
   githubFunction,
   unityFunction,
   pythonFunction,
-  flaskFunction,
   vscodeFunction,
 } from "./icons.js";
 import MakeInputText from "./InputText.js";
@@ -41,12 +41,12 @@ export default function DisplayAbout() {
   techLogos.appendChild(jsFunction());
   techLogos.appendChild(sassFunction());
   techLogos.appendChild(reactFunction());
-  techLogos.appendChild(npmFunction());
+  techLogos.appendChild(tsFunction());
   techLogos.appendChild(gitFunction());
   techLogos.appendChild(githubFunction());
   techLogos.appendChild(unityFunction());
   techLogos.appendChild(pythonFunction());
-  techLogos.appendChild(flaskFunction());
+  techLogos.appendChild(npmFunction());
   techLogos.appendChild(vscodeFunction());
 
   about.appendChild(name);

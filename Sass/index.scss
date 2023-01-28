@@ -387,17 +387,29 @@ body {
 
         .js-logo {
           color: $javascriptYellow;
-          border-radius: 0 0 40px 40px;
           text-shadow: 0 0 1px $javascriptYellow;
-          width: 130px;
+          border-radius: 7px;
+          width: 160px;
 
           @include responsive(phone) {
-            width: 69px;
-            border-radius: 0 0 25px 25px;
+            width: 85px;
           }
           @include responsive(tabletSmall) {
-            width: 69px;
-            border-radius: 0 0 25px 25px;
+            width: 85px;
+          }
+        }
+
+        .ts-logo {
+          color: $typescriptBlue;
+          text-shadow: 0 0 1px $typescriptBlue;
+          border-radius: 7px;
+          width: 160px;
+
+          @include responsive(phone) {
+            width: 85px;
+          }
+          @include responsive(tabletSmall) {
+            width: 85px;
           }
         }
 
@@ -504,20 +516,6 @@ body {
           @include responsive(tabletSmall) {
             width: 65px;
             border-radius: 30px;
-          }
-        }
-
-        .flask-logo {
-          border-radius: 10px;
-          width: 160px;
-
-          @include responsive(phone) {
-            width: 85px;
-            border-radius: 10px;
-          }
-          @include responsive(tabletSmall) {
-            width: 85px;
-            border-radius: 10px;
           }
         }
 
