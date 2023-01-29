@@ -27,14 +27,14 @@ export default function DisplayLinks() {
     "linkedin-square",
     "https://www.linkedin.com/in/aseer-uz-zaman-89a8a8187/"
   );
-  //   const twitter = makeLink("twitter", "https://twitter.com/Electromorphous");
-  const youtube = makeLink("youtube-play", "https://youtu.be/dQw4w9WgXcQ");
+  // const twitter = makeLink("twitter", "https://twitter.com/Electromorphous");
+  // const youtube = makeLink("youtube-play", "https://youtu.be/dQw4w9WgXcQ");
 
   links.appendChild(mail);
   links.appendChild(github);
   links.appendChild(linkedin);
-  //   links.appendChild(twitter);
-  links.appendChild(youtube);
+  // links.appendChild(twitter);
+  // links.appendChild(youtube);
 
   info.appendChild(links);
   repeater.appendChild(info);
