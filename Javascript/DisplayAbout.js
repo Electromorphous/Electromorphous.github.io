@@ -1,15 +1,15 @@
 import {
-  htmlFunction,
-  cssFunction,
   jsFunction,
   tsFunction,
   sassFunction,
   reactFunction,
-  npmFunction,
-  gitFunction,
   githubFunction,
+  gitlabFunction,
+  nodeFunction,
+  nestFunction,
+  mongoFunction,
   unityFunction,
-  pythonFunction,
+  linuxFunction,
   vscodeFunction,
 } from "./icons.js";
 import MakeInputText from "./InputText.js";
@@ -36,17 +36,17 @@ export default function DisplayAbout() {
   const techLogos = document.createElement("div");
   techLogos.className = "tech-logos";
 
-  techLogos.appendChild(htmlFunction());
-  techLogos.appendChild(cssFunction());
   techLogos.appendChild(jsFunction());
-  techLogos.appendChild(sassFunction());
-  techLogos.appendChild(reactFunction());
   techLogos.appendChild(tsFunction());
-  techLogos.appendChild(gitFunction());
+  techLogos.appendChild(reactFunction());
+  techLogos.appendChild(sassFunction());
   techLogos.appendChild(githubFunction());
+  techLogos.appendChild(gitlabFunction());
+  techLogos.appendChild(nodeFunction());
+  techLogos.appendChild(nestFunction());
+  techLogos.appendChild(mongoFunction());
+  techLogos.appendChild(linuxFunction());
   techLogos.appendChild(unityFunction());
-  techLogos.appendChild(pythonFunction());
-  techLogos.appendChild(npmFunction());
   techLogos.appendChild(vscodeFunction());
 
   about.appendChild(name);

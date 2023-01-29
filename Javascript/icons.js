@@ -1,145 +1,3 @@
-export function htmlFunction() {
-  const logoParent = document.createElement("div");
-  logoParent.className = "logo-parent";
-  const logo = document.createElement("div");
-  logo.className = "logo html-logo";
-  logo.innerHTML =
-    "<span>`NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`</span><br>" +
-    "<span>`oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo`</span><br>" +
-    "<span>`/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/`</span><br>" +
-    "<span>`:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN:`</span><br>" +
-    "<span>`-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN-`</span><br>" +
-    "<span>``NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNNN``</span><br>" +
-    "<span>``NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNNN``</span><br>" +
-    "<span>``oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNNo``</span><br>" +
-    "<span>``/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNN/``</span><br>" +
-    "<span>``:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNN:``</span><br>" +
-    "<span>``.NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNN.``</span><br>" +
-    "<span>```NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooooooooNNNNNNNNNN```</span><br>" +
-    "<span>```NNNNNNNNNNNNNNNNNNNNNNo////////////////////////////::::::::::::::::::::::::::::/ooooooooooooNNNNNNNNNN```</span><br>" +
-    "<span>```oNNNNNNNNNNNNNNNNNNNNN/````````````````````````````````````````````````````````-ooooooooooooNNNNNNNNNo```</span><br>" +
-    "<span>```/NNNNNNNNNNNNNNNNNNNNNo````````````````````````````````````````````````````````:ooooooooooooNNNNNNNNN/```</span><br>" +
-    "<span>```-NNNNNNNNNNNNNNNNNNNNNN````````````````````````````````````````````````````````:ooooooooooooNNNNNNNNN-```</span><br>" +
-    "<span>```.NNNNNNNNNNNNNNNNNNNNNN````````````````````````````````````````````````````````/oooooooooooNNNNNNNNNN.```</span><br>" +
-    "<span>````NNNNNNNNNNNNNNNNNNNNNN.```````````````````````````````````````````````````````ooooooooooooNNNNNNNNNN````</span><br>" +
-    "<span>````NNNNNNNNNNNNNNNNNNNNNN-````````````...............```````````````````````````.ooooooooooooNNNNNNNNNN````</span><br>" +
-    "<span>````/NNNNNNNNNNNNNNNNNNNNN-```````````.NNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooNNNNNNNNN/````</span><br>" +
-    "<span>````:NNNNNNNNNNNNNNNNNNNNN:```````````.NNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooNNNNNNNNN:````</span><br>" +
-    "<span>````-NNNNNNNNNNNNNNNNNNNNN/````````````NNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooNNNNNNNNN-````</span><br>" +
-    "<span>````.NNNNNNNNNNNNNNNNNNNNNo````````````oNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooooooNNNNNNNNNN.````</span><br>" +
-    "<span>`````NNNNNNNNNNNNNNNNNNNNNo````````````/NNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooooooNNNNNNNNNN`````</span><br>" +
-    "<span>`````oNNNNNNNNNNNNNNNNNNNNN````````````:NNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooooooNNNNNNNNNo`````</span><br>" +
-    "<span>`````/NNNNNNNNNNNNNNNNNNNNN````````````.--------------..........................-ooooooooooooNNNNNNNNN/`````</span><br>" +
-    "<span>`````:NNNNNNNNNNNNNNNNNNNNN.````````````````````````````````````````````````````.ooooooooooooNNNNNNNNN:`````</span><br>" +
-    "<span>`````-NNNNNNNNNNNNNNNNNNNNN-````````````````````````````````````````````````````-ooooooooooooNNNNNNNNN-`````</span><br>" +
-    "<span>``````NNNNNNNNNNNNNNNNNNNNN:````````````````````````````````````````````````````-oooooooooooNNNNNNNNNN``````</span><br>" +
-    "<span>``````NNNNNNNNNNNNNNNNNNNNN:````````````````````````````````````````````````````:oooooooooooNNNNNNNNNN``````</span><br>" +
-    "<span>``````oNNNNNNNNNNNNNNNNNNNN/````````````````````````````````````````````````````/oooooooooooNNNNNNNNNo``````</span><br>" +
-    "<span>``````/NNNNNNNNNNNNNNNNNNNNo::::::::::::::::::::::::::-------------.````````````ooooooooooooNNNNNNNNN/``````</span><br>" +
-    "<span>``````:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooo:````````````ooooooooooooNNNNNNNNN:``````</span><br>" +
-    "<span>``````.NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooo-````````````ooooooooooooNNNNNNNNN.``````</span><br>" +
-    "<span>```````NNNNNNNNNNNNNNNNNNNNNooooooooooooNNNNNNNNNNNNNNooooooooooooo.```````````.oooooooooooNNNNNNNNNN```````</span><br>" +
-    "<span>```````NNNNNNNNNNNNNNNNNNNNN.```````````-NNNNNNNNNNNNNooooooooooooo.```````````.oooooooooooNNNNNNNNNN```````</span><br>" +
-    "<span>```````oNNNNNNNNNNNNNNNNNNNN-```````````.NNNNNNNNNNNNNooooooooooooo````````````-oooooooooooNNNNNNNNNo```````</span><br>" +
-    "<span>```````/NNNNNNNNNNNNNNNNNNNN:````````````NNNNNNNNNNNNNooooooooooooo````````````:oooooooooooNNNNNNNNN/```````</span><br>" +
-    "<span>```````-NNNNNNNNNNNNNNNNNNNN/````````````/NNNNNNNNNNNNooooooooooo/:````````````/oooooooooooNNNNNNNNN-```````</span><br>" +
-    "<span>```````.NNNNNNNNNNNNNNNNNNNNo``````````````.-:/oNNNNNNoooooo/:-.```````````````/oooooooooooNNNNNNNNN.```````</span><br>" +
-    "<span>````````NNNNNNNNNNNNNNNNNNNNN```````````````````..-:/o/:-.`````````````````````oooooooooooNNNNNNNNNN````````</span><br>" +
-    "<span>````````NNNNNNNNNNNNNNNNNNNNN``````````````````````````````````````````````````oooooooooooNNNNNNNNNN````````</span><br>" +
-    "<span>````````/NNNNNNNNNNNNNNNNNNNN.````````````````````````````````````````````````.oooooooooooNNNNNNNNN/````````</span><br>" +
-    "<span>````````:NNNNNNNNNNNNNNNNNNNN/--.```````````````````````````````````````````..:oooooooooooNNNNNNNNN:````````</span><br>" +
-    "<span>````````-NNNNNNNNNNNNNNNNNNNNNNNNo/:-..```````````````````````````````..-:/oooooooooooooooNNNNNNNNN-````````</span><br>" +
-    "<span>````````.NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/:-..```````````````````..-:/oooooooooooooooooooooNNNNNNNNN.````````</span><br>" +
-    "<span>`````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/:-..````````.-:/ooooooooooooooooooooooooooNNNNNNNNNN`````````</span><br>" +
-    "<span>`````````oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/:-:/ooooooooooooooooooooooooooooooooNNNNNNNNNo`````````</span><br>" +
-    "<span>`````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooNNNNNNNNN/`````````</span><br>" +
-    "<span>`````````:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooNNNNNNNNN:`````````</span><br>" +
-    "<span>`````````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooNNNNNNNNNNNNNN-`````````</span><br>" +
-    "<span>``````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooNNNNNNNNNNNNNNNNNNNNN``````````</span><br>" +
-    "<span>``````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooNNNNNNNNNNNNNNNNNNNNNNNNNNNN``````````</span><br>" +
-    "<span>``````````/oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````````</span><br>" +
-    "<span>`````````````.-:/ooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/:-.`````````````</span><br>" +
-    "<span>````````````````````.-:/oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/:-.````````````````````</span><br>" +
-    "<span>``````````````````````````..-:/oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/:-..``````````````````````````</span><br>" +
-    "<span>`````````````````````````````````..-:/oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/:-..`````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````..-:/oNNNNNNNNNNNNNNNNo/:-..````````````````````````````````````````</span><br>" +
-    "<span>```````````````````````````````````````````````..-:/oNNo/:--.```````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>";
-  logoParent.appendChild(logo);
-  return logoParent;
-}
-
-export function cssFunction() {
-  const logoParent = document.createElement("div");
-  logoParent.className = "logo-parent";
-  const logo = document.createElement("div");
-  logo.className = "logo css-logo";
-  logo.innerHTML =
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo</span><br>" +
-    "<span>oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo</span><br>" +
-    "<span>:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN:</span><br>" +
-    "<span>-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN-</span><br>" +
-    "<span>.oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooooooooooNNNNNNNNo.</span><br>" +
-    "<span>'oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooooooooooNNNNNNNNo'</span><br>" +
-    "<span>'oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNNo'</span><br>" +
-    "<span>`oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNNo`</span><br>" +
-    "<span>`:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNN:`</span><br>" +
-    "<span>`.NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNN.`</span><br>" +
-    "<span>`'NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooooooooooooooooNNNNNNNNN'`</span><br>" +
-    "<span>``NNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooooo////////////////////////////ooooooooooooooNNNNNNNNN``</span><br>" +
-    "<span>``oNNNNNNNNNNNNNNNNNNNNN:''''''''''''''''''''''''''''````````````````````````````/ooooooooooooNNNNNNNNNo``</span><br>" +
-    "<span>``/NNNNNNNNNNNNNNNNNNNNN/''''''''''''''''''''''''''''````````````````````````````oooooooooooooNNNNNNNNN/``</span><br>" +
-    "<span>``:NNNNNNNNNNNNNNNNNNNNNo''''''''''''''''''''''''''''```````````````````````````'oooooooooooooNNNNNNNNN:``</span><br>" +
-    "<span>``-NNNNNNNNNNNNNNNNNNNNNo''''''''''''''''''''''''''''```````````````````````````'oooooooooooooNNNNNNNNN-``</span><br>" +
-    "<span>``.oNNNNNNNNNNNNNNNNNNNNo.'''''''''''''''''''''''''''```````````````````````````.oooooooooooooNNNNNNNNo.``</span><br>" +
-    "<span>``'oNNNNNNNNNNNNNNNNNNNNo-...........................'''''''''''''''````````````-ooooooooooooNNNNNNNNNo'``</span><br>" +
-    "<span>```oNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooooooooo'```````````-ooooooooooooNNNNNNNNNo```</span><br>" +
-    "<span>```/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooo'```````````:ooooooooooooNNNNNNNNN/```</span><br>" +
-    "<span>```-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooo````````````/ooooooooooooNNNNNNNNN-```</span><br>" +
-    "<span>```'NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooo````````````oooooooooooooNNNNNNNNN'```</span><br>" +
-    "<span>````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooo/````````````oooooooooooooNNNNNNNNN````</span><br>" +
-    "<span>````oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooo:````````````ooooooooooooNNNNNNNNNo````</span><br>" +
-    "<span>````oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo--------------..............'```````````'ooooooooooooNNNNNNNNNo````</span><br>" +
-    "<span>````:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo''''''''''''''``````````````````````````.ooooooooooooNNNNNNNNN:````</span><br>" +
-    "<span>````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo''''''''''''''``````````````````````````-ooooooooooooNNNNNNNNN-````</span><br>" +
-    "<span>````.oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo.'''''''''''''``````````````````````````:ooooooooooooNNNNNNNNo.````</span><br>" +
-    "<span>````'oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo.'''''''''''''``````````````````````````/ooooooooooooNNNNNNNNo'````</span><br>" +
-    "<span>`````oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo-'''''''''''''``````````````````````````ooooooooooooNNNNNNNNNo`````</span><br>" +
-    "<span>`````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/:::::::::::::-------------.```````````'ooooooooooooNNNNNNNNN/`````</span><br>" +
-    "<span>`````:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooo/```````````'ooooooooooooNNNNNNNNN:`````</span><br>" +
-    "<span>`````.NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooo:```````````.ooooooooooooNNNNNNNNN.`````</span><br>" +
-    "<span>`````'NNNNNNNNNNNNNNNNNNNNNoooooooooooooNNNNNNNNNNNNNooooooooooooo-```````````.ooooooooooooNNNNNNNNN'`````</span><br>" +
-    "<span>``````oNNNNNNNNNNNNNNNNNNNN/'''''''''''.NNNNNNNNNNNNNooooooooooooo'```````````-ooooooooooooNNNNNNNNo``````</span><br>" +
-    "<span>``````oNNNNNNNNNNNNNNNNNNNN/''''''''''''NNNNNNNNNNNNNooooooooooooo'```````````:oooooooooooNNNNNNNNNo``````</span><br>" +
-    "<span>``````/NNNNNNNNNNNNNNNNNNNNo''''''''''''oNNNNNNNNNNNNooooooooooooo````````````:oooooooooooNNNNNNNNN/``````</span><br>" +
-    "<span>``````:NNNNNNNNNNNNNNNNNNNNo''''''''''''ooNNNNNNNNNNNoooooooooooo/````````````/oooooooooooNNNNNNNNN:``````</span><br>" +
-    "<span>``````-NNNNNNNNNNNNNNNNNNNNo'''''''''''''..-/oooNNNNNooooooo/:.''`````````````ooooooooooooNNNNNNNNN-``````</span><br>" +
-    "<span>``````.oNNNNNNNNNNNNNNNNNNNN'''''''''''''''''''..-/ooo/:..'```````````````````ooooooooooooNNNNNNNNo.``````</span><br>" +
-    "<span>``````'oNNNNNNNNNNNNNNNNNNNN''''''''''''''''''''''''''````````````````````````ooooooooooooNNNNNNNNo'``````</span><br>" +
-    "<span>```````oNNNNNNNNNNNNNNNNNNNN.''''''''''''''''''''''''````````````````````````'oooooooooooNNNNNNNNNo```````</span><br>" +
-    "<span>```````/NNNNNNNNNNNNNNNNNNNNo:-.'''''''''''''''''''''`````````````````````'.-/oooooooooooNNNNNNNNN/```````</span><br>" +
-    "<span>```````-NNNNNNNNNNNNNNNNNNNNNNNooo/:-.'''''''''''''''```````````````'.-:/ooooooooooooooooNNNNNNNNN-```````</span><br>" +
-    "<span>```````'NNNNNNNNNNNNNNNNNNNNNNNNNNNNNooo/:-.'''''''''`````````'.-:/ooooooooooooooooooooooNNNNNNNNN'```````</span><br>" +
-    "<span>````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooo/:-.'''```'.-:/ooooooooooooooooooooooooooooNNNNNNNNN````````</span><br>" +
-    "<span>````````oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooo/:/ooooooooooooooooooooooooooooooooooNNNNNNNNo````````</span><br>" +
-    "<span>````````oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooNNNNNNNNNo````````</span><br>" +
-    "<span>````````:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooooNNNNNNNNN:````````</span><br>" +
-    "<span>````````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooooooooooooooooNNNNNNNNNNN-````````</span><br>" +
-    "<span>````````.oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooooooooooooNNNNNNNNNNNNNNNNNo.````````</span><br>" +
-    "<span>````````'oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooooooooooooooooNNNNNNNNNNNNNNNNNNNNNNNNo'````````</span><br>" +
-    "<span>`````````/ooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoo/`````````</span><br>" +
-    "<span>``````````''.-/ooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooo/-.''``````````</span><br>" +
-    "<span>`````````````````'..:/ooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooo/:..'`````````````````</span><br>" +
-    "<span>````````````````````````'.-:/ooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooo/:-.'````````````````````````</span><br>" +
-    "<span>```````````````````````````````'.-:/oooNNNNNNNNNNNNNNNNNNNNNNNNNNNNooo/:-.'```````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````'.-:/oooNNNNNNNNNNNNNNooo/:-.'``````````````````````````````````````</span><br>" +
-    "<span>`````````````````````````````````````````````'.-:/oooooo/:-.'`````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````````````````''````````````````````````````````````````````````````</span><br>";
-  logoParent.appendChild(logo);
-  return logoParent;
-}
-
 export function jsFunction() {
   const logoParent = document.createElement("div");
   logoParent.className = "logo-parent";
@@ -202,128 +60,6 @@ export function jsFunction() {
     "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
     "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
     "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>";
-  logoParent.appendChild(logo);
-  return logoParent;
-}
-
-export function sassFunction() {
-  const logoParent = document.createElement("div");
-  logoParent.className = "logo-parent";
-  const logo = document.createElement("div");
-  logo.className = "logo sass-logo";
-  logo.innerHTML =
-    "<span>``````````````````````````````````````````````.-::/++ooNNNNNNNooo+//:.````````````````````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````.:/+NNNNNNNNNNNNNNNNNNNNNNNNNNNN+:.```````````````````````````````````````````````````````</span><br>" +
-    "<span>```````````````````````````````````.:+oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/.````````````````````````````````````````````````````</span><br>" +
-    "<span>```````````````````````````````-/oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/```````````````````````````````````````````````````</span><br>" +
-    "<span>```````````````````````````-/oNNNNNNNNNNNNNNNNNo+/::-..``````````..:/+NNNNNNNNNo.`````````````````````````````````````````````````</span><br>" +
-    "<span>```````````````````````./oNNNNNNNNNNNNNNNo+/-.`````````````````````````./NNNNNNNN`````````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````-/oNNNNNNNNNNNNNN+/-`````````````````````````````````.oNNNNNN/````````````````````````````````````````````````</span><br>" +
-    "<span>`````````````````-/oNNNNNNNNNNNNN+:.``````````````````````````````````````-NNNNNNo````````````````````````````````````````````````</span><br>" +
-    "<span>``````````````./oNNNNNNNNNNNNo/-``````````````````````````````````````````.NNNNNNo````````````````````````````````````````````````</span><br>" +
-    "<span>````````````-+NNNNNNNNNNNN+:.`````````````````````````````````````````````-NNNNNN/````````````````````````````````````````````````</span><br>" +
-    "<span>``````````:oNNNNNNNNNNN+:`````````````````````````````````````````````````oNNNNNN.````````````````````````````````````````````````</span><br>" +
-    "<span>````````:oNNNNNNNNNNo:```````````````````````````````````````````````````+NNNNNN/`````````````````````````````````````````````````</span><br>" +
-    "<span>``````-oNNNNNNNNNN+-````````````````````````````````````````````````````+NNNNNN+``````````````````````````````````````````````````</span><br>" +
-    "<span>`````/NNNNNNNNNN/.````````````````````````````````````````````````````-oNNNNNN+```````````````````````````````````````````````````</span><br>" +
-    "<span>```.oNNNNNNNNN+.````````````````````````````````````````````````````.+NNNNNNN/````````````````````````````````````````````````````</span><br>" +
-    "<span>``-NNNNNNNNNo:````````````````````````````````````````````````````-+NNNNNNNo-`````````````````````````````````````````````````````</span><br>" +
-    "<span>`-NNNNNNNNNo.``````````````````````````````````````````````````.:oNNNNNNNo:```````````````````````````````````````````````````````</span><br>" +
-    "<span>`oNNNNNNNNo.````````````````````````````````````````````````.:+NNNNNNNNo:`````````````````````````````````````````````````````````</span><br>" +
-    "<span>/NNNNNNNNN-```````````````````o/.```````````````````````.:+oNNNNNNNNN+-```````````````````````````````````````````````````````````</span><br>" +
-    "<span>NNNNNNNNNo````````````````````-oN+:-.````````````..-:/ooNNNNNNNNNo+:.`````````````````````````````````````````````````````````````</span><br>" +
-    "<span>NNNNNNNNN+`````````````````````./oNNooo+++++++ooooNNNNNNNNNNNo+/-``````````````````````````-::///:.```````````````````````````````</span><br>" +
-    "<span>/NNNNNNNNo````````````````````````-/+oNNNNNNNNNNNNNNNNoo+/:-.`````````````````````````````/NNNNNNN:```````````````````````````````</span><br>" +
-    "<span>`+NNNNNNNN:```````````````````````````.--::://::::-..````````````````````.://///:````````.NNNNNNNo````````````````````````````````</span><br>" +
-    "<span>``+NNNNNNNN:````````````````````````````````````````````````````````````.NNNNNNNo````````+NNNNNNN:````````````````````````````````</span><br>" +
-    "<span>```:NNNNNNNN/````````````````````````````````````````...````````````````+NNNNNNN-```````/NNNNNNNN.````````````````````````````````</span><br>" +
-    "<span>````.+NNNNNNNo:``````````````````````````````````-/+oNNNo/`````````````:NNNNNNNo```````/NNNNNNNNN.````````````````````````````````</span><br>" +
-    "<span>``````-+NNNNNNNo:`````````````````````````````./oNNNNNNNNN/```````````-NNNNNNNN/``````/NNN+/NNNNN/````````````````````````````````</span><br>" +
-    "<span>````````./oNNNNNNo/.````````````````````````.+NNNNNN+:-oNNo``````````.NNNNNNNNN+`````/NNN+``oNNNNN.```````````````````````````````</span><br>" +
-    "<span>``````````.:oNNNNNNN+:````````````````````./NNNNNN/.```oNNo-:-```````oNNN:oNNNNN````+NNN/```:NNNNNo.```.-://++++++++//-.``````````</span><br>" +
-    "<span>`````````````./oNNNNNNo/-``````````````-/+NNNNNNo-````-NNNNNNNo`````oNNN/`:NNNNN/`.oNNN/`````+NNNNNo/+oNNNNNNNNNNNNNNNNNo+/.``````</span><br>" +
-    "<span>````````````````-+oNNNNNNo:````````.:+oNNNNNNNNo.`````oNNNNNNN/````+NNN+```oNNNNN/oNNN:```````+NNNNNNNoo+/:-------://+ooNNNNo:````</span><br>" +
-    "<span>```````````````````-+oNNNNNo/```-/oNNNNNNNNNNNo.`````:NNNNNNNN````+NNNo````.NNNNNNNNo.```````.+NNNNNNo`````````````````.-/oNNNo-``</span><br>" +
-    "<span>``````````````````````:+NNNNNo+NNNNNo/-/NNNNNN.`````.NNNNNNNN/```/NNNo``````-NNNNNNo```````.+NNo/NNNNN-````````````````````.+NNN/`</span><br>" +
-    "<span>````````````````````````:NNNNNNNN+:.```NNNNNN/``````oNNNNNNNN```:NNNo.```````/NNNNNN-`````/NNN+.`oNNNN/``````````````````````-oNN-</span><br>" +
-    "<span>`````````````````````-/oNNNNNNNNN.````-NNNNNN.`````+NNNNNNNN/``-NNNo.```````/NNNNNNNo````+NNN:``.NNNNN-```````````````````````-NNo</span><br>" +
-    "<span>`````````````````.:+NNNNNo/--NNNN+````/NNNNNN`````:NNNNNNNNN``-NNNo.``````-oNNo+NNNNN```oNNN:``.oNNNN/`````````````````````````oNN</span><br>" +
-    "<span>``````````````.:+NNNNNo/.````oNNNN````+NNNNNN````-NNNNNNNNN+`-NNNo.``````+NNN+.oNNNNN``:NNNo`-/NNNNo-``````````````````````````NN/</span><br>" +
-    "<span>````````````:+NNNNNo/.```````+NNNN-```+NNNNNN```.NNNN+NNNNN/-NNNo.`````:NNNo-.+NNNNN:``+NNNNNNNNo+-``````````````````````````.oN/`</span><br>" +
-    "<span>`````````./oNNNNNo-``````````NNNNN-```:NNNNNN/`-NNNN/-NNNNNoNNNo`````.oNNo:-+NNNNNo-```.+oooo+:-```````````````````````````-/o+-``</span><br>" +
-    "<span>````````/NNNNNN+-```````````:NNNNN.````NNNNNNNoNNNN+`-NNNNNNNN+`````:NNNNooNNNNNo:`````````````````````````````````````````:-`````</span><br>" +
-    "<span>``````-oNNNNNN:````````````.oNNNNo`````-NNNNNNNNNN+```NNNNNNN/``````/NNNNNNo+/-```````````````````````````````````````````````````</span><br>" +
-    "<span>`````:NNNNNNN-````````````.oNNNNN-``````:NNNNNNNN/````-oNNo+.`````````....````````````````````````````````````````````````````````</span><br>" +
-    "<span>````.NNNNNNN/````````````/NNNNNN/````````./oNNo+-````````.````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>````/NNNNNNN-``````````:oNNNNNN/``````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>````+NNNNNNN/``````.:+NNNNNNNN:```````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>````/NNNNNNNNo+/+oNNNNNNNNNN/`````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>`````oNNNNNNNNNNNNNNNNNNNN/.``````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>`````.oNNNNNNNNNNNNNNNo/-`````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>```````-/+ooNNNNoo+:-`````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>";
-  logoParent.appendChild(logo);
-  return logoParent;
-}
-
-export function reactFunction() {
-  const logoParent = document.createElement("div");
-  logoParent.className = "logo-parent";
-  const logo = document.createElement("div");
-  logo.className = "logo react-logo";
-  logo.innerHTML =
-    "<span>````````````````````````````````++ooo++```````````````````````````````````````+++ooo+++```````````````````````````````</span><br>" +
-    "<span>````````````````````````````+oNNNNNNNNNNNNoo+````````````````````````````+oNNNNNNNNNNNNNo+````````````````````````````</span><br>" +
-    "<span>```````````````````````````oNNNNNNNNNNNNNNNNNNoo`````````````````````+oNNNNNNNNNNNNNNNNNNNo```````````````````````````</span><br>" +
-    "<span>`````````````````````````+NNNNNo+``````++oNNNNNNNNo+``````````````+oNNNNNNNNo++``````+oNNNNN+`````````````````````````</span><br>" +
-    "<span>`````````````````````````NNNNN+`````````````+oNNNNNNNo``````````oNNNNNNNo+`````````````+NNNNN`````````````````````````</span><br>" +
-    "<span>````````````````````````oNNNN+`````````````````+oNNNNNNo+````+oNNNNNNo+`````````````````oNNNNo````````````````````````</span><br>" +
-    "<span>````````````````````````NNNNN`````````````````````+NNNNNNo++NNNNNNo+`````````````````````NNNNN````````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo```````````````````````+oNNNNNNNNNNo````````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo`````````````````````````+NNNNNNNN+`````````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo````````````````````````+NNNNNNNNNN+````````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo``````````````````````+NNNNNNooNNNNNo+``````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo`````````````````````oNNNNNo````oNNNNNo`````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>````````````````````````NNNNN```````````````````+NNNNNo```````+NNNNNN+```````````````````NNNNN````````````````````````</span><br>" +
-    "<span>````````````````````````NNNNN+`````````````````oNNNNN+``````````+NNNNNo`````````````````+NNNNN````````````````````````</span><br>" +
-    "<span>````````````````````````oNNNNo``````````````++NNNNNNNooooooooooooNNNNNNN++``````````````oNNNN+````````````````````````</span><br>" +
-    "<span>`````````````````````````NNNNN``++ooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooo++`+NNNNN`````````````````````````</span><br>" +
-    "<span>````````````````````````+NNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooNNNNNNNNNNNNNNNNNNNNNNNNNN+````````````````````````</span><br>" +
-    "<span>```````````````````+ooNNNNNNNNNNNNNNooo+oNNNNNNo``````````````````````oNNNNNNoooooNNNNNNNNNNNNNNoo+```````````````````</span><br>" +
-    "<span>```````````````+oNNNNNNNNNNNNNNo````````oNNNNN+````````````````````````+NNNNNo```````+oNNNNNNNNNNNNNNo++``````````````</span><br>" +
-    "<span>```````````+oNNNNNNNNNo++`+NNNNN```````oNNNNo````````````````````````````oNNNNo``````+NNNNN+`++oNNNNNNNNNo+```````````</span><br>" +
-    "<span>````````+oNNNNNNNoo+```````oNNNNo````+NNNNNo``````````````````````````````oNNNNN+````oNNNN+```````+ooNNNNNNNo+````````</span><br>" +
-    "<span>``````oNNNNNNoo+````````````NNNNN+``+NNNNNo```````````+ooNNNNoo+```````````oNNNNN+``oNNNNo````````````+ooNNNNNNo``````</span><br>" +
-    "<span>````oNNNNNNo````````````````+NNNNN++NNNNN+`````````+NNNNNNNNNNNNNN+`````````+NNNNN++NNNNN`````````````````oNNNNNNo````</span><br>" +
-    "<span>``+NNNNNo+```````````````````+NNNNNNNNNN+`````````oNNNNNNNNNNNNNNNNo`````````+NNNNNNNNNN+```````````````````+oNNNNN+``</span><br>" +
-    "<span>`+NNNNN+``````````````````````oNNNNNNNN+`````````NNNNNNNNNNNNNNNNNNNN`````````+NNNNNNNNo``````````````````````+NNNNN+`</span><br>" +
-    "<span>`NNNNN+````````````````````````oNNNNNN+`````````oNNNNNNNNNNNNNNNNNNNNo`````````+NNNNNNo````````````````````````+NNNNN`</span><br>" +
-    "<span>`NNNNN`````````````````````````+NNNNNo``````````oNNNNNNNNNNNNNNNNNNNNo``````````oNNNNN+`````````````````````````NNNNN`</span><br>" +
-    "<span>`NNNNN+````````````````````````NNNNNNNo`````````+NNNNNNNNNNNNNNNNNNNN+`````````oNNNNNNN````````````````````````+NNNNN`</span><br>" +
-    "<span>``NNNNNo``````````````````````oNNNNNNNNo`````````oNNNNNNNNNNNNNNNNNNo`````````oNNNNNNNNN``````````````````````oNNNNN``</span><br>" +
-    "<span>```oNNNNNo```````````````````oNNNNNNNNNNo`````````oNNNNNNNNNNNNNNNNo`````````oNNNNNoNNNNo```````````````````oNNNNNo```</span><br>" +
-    "<span>````+NNNNNNo+```````````````+NNNNN``NNNNNo``````````oNNNNNNNNNNNNo``````````oNNNNN``NNNNN+```````````````+oNNNNNN+````</span><br>" +
-    "<span>``````+oNNNNNNoo+```````````NNNNN+```NNNNNo````````````+oooooo+````````````oNNNNo```+NNNNN```````````+ooNNNNNNo+``````</span><br>" +
-    "<span>`````````+oNNNNNNNoo+``````oNNNNo`````oNNNNo``````````````````````````````oNNNNo`````oNNNNo``````+ooNNNNNNNoo`````````</span><br>" +
-    "<span>````````````+oNNNNNNNNNoo++NNNNN```````oNNNNN+``````````````````````````+NNNNNo```````NNNNNo+ooNNNNNNNNNo+````````````</span><br>" +
-    "<span>````````````````+oNNNNNNNNNNNNNN+++`````+NNNNNo````````````````````````+NNNNN+`````+++NNNNNNNNNNNNNNo+````````````````</span><br>" +
-    "<span>````````````````````++ooNNNNNNNNNNNNNNNooNNNNNNo+`````````````````````oNNNNNNooNNNNNNNNNNNNNNNoo++````````````````````</span><br>" +
-    "<span>`````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`````````````````````````</span><br>" +
-    "<span>`````````````````````````NNNNN````+++oooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooo+++````oNNNN+````````````````````````</span><br>" +
-    "<span>````````````````````````oNNNNo````````````````oNNNNNN++++++++++++NNNNNNo````````````````+NNNNo````````````````````````</span><br>" +
-    "<span>````````````````````````NNNNN+`````````````````+NNNNNo``````````oNNNNN+``````````````````NNNNN````````````````````````</span><br>" +
-    "<span>````````````````````````NNNNN````````````````````oNNNNNo``````+NNNNNo````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo`````````````````````+NNNNNN+``+NNNNNN+`````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo```````````````````````oNNNNNNoNNNNNo```````````````````````oNNNNo```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo`````````````````````````oNNNNNNNNo`````````````````````````oNNNNo```````````````````````</span><br>" +
-    "<span>```````````````````````+NNNNo`````````````````````````+NNNNNNNN+`````````````````````````oNNNNo```````````````````````</span><br>" +
-    "<span>````````````````````````NNNNo```````````````````````+NNNNNNNNNNNNo```````````````````````oNNNN+```````````````````````</span><br>" +
-    "<span>````````````````````````NNNNN+```````````````````+oNNNNNNo``oNNNNNNo+````````````````````NNNNN````````````````````````</span><br>" +
-    "<span>````````````````````````+NNNNo````````````````+oNNNNNNN+``````+oNNNNNNo+````````````````oNNNNo````````````````````````</span><br>" +
-    "<span>`````````````````````````oNNNNo````````````+oNNNNNNNo+```````````oNNNNNNNo+````````````oNNNNN`````````````````````````</span><br>" +
-    "<span>``````````````````````````oNNNNNo+```+++oNNNNNNNNo+````````````````+oNNNNNNNNoo++```+oNNNNNN``````````````````````````</span><br>" +
-    "<span>```````````````````````````oNNNNNNNNNNNNNNNNNNo+```````````````````````+oNNNNNNNNNNNNNNNNNo```````````````````````````</span><br>" +
-    "<span>`````````````````````````````+oNNNNNNNNNNoo+```````````````````````````````+oNNNNNNNNNNo+`````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````+++`````````````````````````````````````````````````````````````````````````````````</span><br>";
   logoParent.appendChild(logo);
   return logoParent;
 }
@@ -395,107 +131,124 @@ export function tsFunction() {
   return logoParent;
 }
 
-export function npmFunction() {
+export function reactFunction() {
   const logoParent = document.createElement("div");
   logoParent.className = "logo-parent";
   const logo = document.createElement("div");
-  logo.className = "logo npm-logo";
+  logo.className = "logo react-logo";
   logo.innerHTML =
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````````````````````:NNNNNNNN`````````````````````````````````+NNNNNNN+`````````````````````````````````````````````````:NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````````````````````-NNNNNNNN`````````````````````````````````/NNNNNNN/`````````````````````````````````````````````````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````````````````````-NNNNNNNN`````````````````````````````````/NNNNNNN/`````````````````````````````````````````````````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````````````````````-NNNNNNNN`````````````````````````````````/NNNNNNN/`````````````````````````````````````````````````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````++++++++.```````-NNNNNNNN````````````````.++++++++````````/NNNNNNN/````````````````:+++++++:````````++++++++.```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````-NNNNNNNN````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````-NNNNNNNN````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````-NNNNNNNN````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````-NNNNNNNN````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````-NNNNNNNN````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````-NNNNNNNN````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````-NNNNNNNN````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN````````````````.////////````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN`````````````````````````````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN`````````````````````````````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN-````````````````NNNNNNNN-```````-NNNNNNNN`````````````````````````````````/NNNNNNN/````````````````/NNNNNNN/````````NNNNNNNN-```````-NNNNNNNN</span><br>" +
-    "<span>NNNNNNNN:................NNNNNNNN:.......:NNNNNNNN`````````````````................+NNNNNNN+................+NNNNNNN+........NNNNNNNN:.......:NNNNNNNN</span><br>" +
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN````````````````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN````````````````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN````````````````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN````````````````:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>``````````````````````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN```````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN```````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN```````````````````````````````````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN```````````````````````````````````````````````````````````````````````````</span><br>";
+    "<span>````````````````````````````````++ooo++```````````````````````````````````````+++ooo+++```````````````````````````````</span><br>" +
+    "<span>````````````````````````````+oNNNNNNNNNNNNoo+````````````````````````````+oNNNNNNNNNNNNNo+````````````````````````````</span><br>" +
+    "<span>```````````````````````````oNNNNNNNNNNNNNNNNNNoo`````````````````````+oNNNNNNNNNNNNNNNNNNNo```````````````````````````</span><br>" +
+    "<span>`````````````````````````+NNNNNo+``````++oNNNNNNNNo+``````````````+oNNNNNNNNo++``````+oNNNNN+`````````````````````````</span><br>" +
+    "<span>`````````````````````````NNNNN+`````````````+oNNNNNNNo``````````oNNNNNNNo+`````````````+NNNNN`````````````````````````</span><br>" +
+    "<span>````````````````````````oNNNN+`````````````````+oNNNNNNo+````+oNNNNNNo+`````````````````oNNNNo````````````````````````</span><br>" +
+    "<span>````````````````````````NNNNN`````````````````````+NNNNNNo++NNNNNNo+`````````````````````NNNNN````````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo```````````````````````+oNNNNNNNNNNo````````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo`````````````````````````+NNNNNNNN+`````````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo````````````````````````+NNNNNNNNNN+````````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo``````````````````````+NNNNNNooNNNNNo+``````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo`````````````````````oNNNNNo````oNNNNNo`````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>````````````````````````NNNNN```````````````````+NNNNNo```````+NNNNNN+```````````````````NNNNN````````````````````````</span><br>" +
+    "<span>````````````````````````NNNNN+`````````````````oNNNNN+``````````+NNNNNo`````````````````+NNNNN````````````````````````</span><br>" +
+    "<span>````````````````````````oNNNNo``````````````++NNNNNNNooooooooooooNNNNNNN++``````````````oNNNN+````````````````````````</span><br>" +
+    "<span>`````````````````````````NNNNN``++ooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNoooo++`+NNNNN`````````````````````````</span><br>" +
+    "<span>````````````````````````+NNNNNNNNNNNNNNNNNNNNNNNNNNooooooooooooooooNNNNNNNNNNNNNNNNNNNNNNNNNN+````````````````````````</span><br>" +
+    "<span>```````````````````+ooNNNNNNNNNNNNNNooo+oNNNNNNo``````````````````````oNNNNNNoooooNNNNNNNNNNNNNNoo+```````````````````</span><br>" +
+    "<span>```````````````+oNNNNNNNNNNNNNNo````````oNNNNN+````````````````````````+NNNNNo```````+oNNNNNNNNNNNNNNo++``````````````</span><br>" +
+    "<span>```````````+oNNNNNNNNNo++`+NNNNN```````oNNNNo````````````````````````````oNNNNo``````+NNNNN+`++oNNNNNNNNNo+```````````</span><br>" +
+    "<span>````````+oNNNNNNNoo+```````oNNNNo````+NNNNNo``````````````````````````````oNNNNN+````oNNNN+```````+ooNNNNNNNo+````````</span><br>" +
+    "<span>``````oNNNNNNoo+````````````NNNNN+``+NNNNNo```````````+ooNNNNoo+```````````oNNNNN+``oNNNNo````````````+ooNNNNNNo``````</span><br>" +
+    "<span>````oNNNNNNo````````````````+NNNNN++NNNNN+`````````+NNNNNNNNNNNNNN+`````````+NNNNN++NNNNN`````````````````oNNNNNNo````</span><br>" +
+    "<span>``+NNNNNo+```````````````````+NNNNNNNNNN+`````````oNNNNNNNNNNNNNNNNo`````````+NNNNNNNNNN+```````````````````+oNNNNN+``</span><br>" +
+    "<span>`+NNNNN+``````````````````````oNNNNNNNN+`````````NNNNNNNNNNNNNNNNNNNN`````````+NNNNNNNNo``````````````````````+NNNNN+`</span><br>" +
+    "<span>`NNNNN+````````````````````````oNNNNNN+`````````oNNNNNNNNNNNNNNNNNNNNo`````````+NNNNNNo````````````````````````+NNNNN`</span><br>" +
+    "<span>`NNNNN`````````````````````````+NNNNNo``````````oNNNNNNNNNNNNNNNNNNNNo``````````oNNNNN+`````````````````````````NNNNN`</span><br>" +
+    "<span>`NNNNN+````````````````````````NNNNNNNo`````````+NNNNNNNNNNNNNNNNNNNN+`````````oNNNNNNN````````````````````````+NNNNN`</span><br>" +
+    "<span>``NNNNNo``````````````````````oNNNNNNNNo`````````oNNNNNNNNNNNNNNNNNNo`````````oNNNNNNNNN``````````````````````oNNNNN``</span><br>" +
+    "<span>```oNNNNNo```````````````````oNNNNNNNNNNo`````````oNNNNNNNNNNNNNNNNo`````````oNNNNNoNNNNo```````````````````oNNNNNo```</span><br>" +
+    "<span>````+NNNNNNo+```````````````+NNNNN``NNNNNo``````````oNNNNNNNNNNNNo``````````oNNNNN``NNNNN+```````````````+oNNNNNN+````</span><br>" +
+    "<span>``````+oNNNNNNoo+```````````NNNNN+```NNNNNo````````````+oooooo+````````````oNNNNo```+NNNNN```````````+ooNNNNNNo+``````</span><br>" +
+    "<span>`````````+oNNNNNNNoo+``````oNNNNo`````oNNNNo``````````````````````````````oNNNNo`````oNNNNo``````+ooNNNNNNNoo`````````</span><br>" +
+    "<span>````````````+oNNNNNNNNNoo++NNNNN```````oNNNNN+``````````````````````````+NNNNNo```````NNNNNo+ooNNNNNNNNNo+````````````</span><br>" +
+    "<span>````````````````+oNNNNNNNNNNNNNN+++`````+NNNNNo````````````````````````+NNNNN+`````+++NNNNNNNNNNNNNNo+````````````````</span><br>" +
+    "<span>````````````````````++ooNNNNNNNNNNNNNNNooNNNNNNo+`````````````````````oNNNNNNooNNNNNNNNNNNNNNNoo++````````````````````</span><br>" +
+    "<span>`````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`````````````````````````</span><br>" +
+    "<span>`````````````````````````NNNNN````+++oooooNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNooooo+++````oNNNN+````````````````````````</span><br>" +
+    "<span>````````````````````````oNNNNo````````````````oNNNNNN++++++++++++NNNNNNo````````````````+NNNNo````````````````````````</span><br>" +
+    "<span>````````````````````````NNNNN+`````````````````+NNNNNo``````````oNNNNN+``````````````````NNNNN````````````````````````</span><br>" +
+    "<span>````````````````````````NNNNN````````````````````oNNNNNo``````+NNNNNo````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo`````````````````````+NNNNNN+``+NNNNNN+`````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo```````````````````````oNNNNNNoNNNNNo```````````````````````oNNNNo```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo`````````````````````````oNNNNNNNNo`````````````````````````oNNNNo```````````````````````</span><br>" +
+    "<span>```````````````````````+NNNNo`````````````````````````+NNNNNNNN+`````````````````````````oNNNNo```````````````````````</span><br>" +
+    "<span>````````````````````````NNNNo```````````````````````+NNNNNNNNNNNNo```````````````````````oNNNN+```````````````````````</span><br>" +
+    "<span>````````````````````````NNNNN+```````````````````+oNNNNNNo``oNNNNNNo+````````````````````NNNNN````````````````````````</span><br>" +
+    "<span>````````````````````````+NNNNo````````````````+oNNNNNNN+``````+oNNNNNNo+````````````````oNNNNo````````````````````````</span><br>" +
+    "<span>`````````````````````````oNNNNo````````````+oNNNNNNNo+```````````oNNNNNNNo+````````````oNNNNN`````````````````````````</span><br>" +
+    "<span>``````````````````````````oNNNNNo+```+++oNNNNNNNNo+````````````````+oNNNNNNNNoo++```+oNNNNNN``````````````````````````</span><br>" +
+    "<span>```````````````````````````oNNNNNNNNNNNNNNNNNNo+```````````````````````+oNNNNNNNNNNNNNNNNNo```````````````````````````</span><br>" +
+    "<span>`````````````````````````````+oNNNNNNNNNNoo+```````````````````````````````+oNNNNNNNNNNo+`````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````+++`````````````````````````````````````````````````````````````````````````````````</span><br>";
   logoParent.appendChild(logo);
   return logoParent;
 }
 
-export function gitFunction() {
+export function sassFunction() {
   const logoParent = document.createElement("div");
   logoParent.className = "logo-parent";
   const logo = document.createElement("div");
-  logo.className = "logo git-logo";
+  logo.className = "logo sass-logo";
   logo.innerHTML =
-    "<span>`````````````````````````````````````````````````````.---.`````````````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````````````-/+NNNNN+/-``````````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````````````-+NNNNNNNNNNN+-````````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````````-/NNNNNNNNNNNNNNN+-``````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````````-/NNNNNNNNNNNNNNNNNNN+-````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````-/NNNNNNNNNNNNNNNNNNNNNNN+.``````````````````````````````````````````</span><br>" +
-    "<span>`````````````````````````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNN+.````````````````````````````````````````</span><br>" +
-    "<span>`````````````````````````````````````````./NNNNNNNNNNNNNNNNNNNNNNNNNNNN/.``````````````````````````````````````</span><br>" +
-    "<span>```````````````````````````````````````````./NNNNNNNNNNNNNNNNNNNNNNNNNNNN/.````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````./.````````-/NNNNNNNNNNNNNNNNNNNNNNNNNNNN/.``````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````./NNN/.````````-/NNNNNNNNNNNNNNNNNNNNNNNNNNNN/.````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````./NNNNNNN/.````````-/NNNNNNNNNNNNNNNNNNNNNNNNNNNN/.``````````````````````````````</span><br>" +
-    "<span>````````````````````````````./NNNNNNNNNNN/.````````-+N++++NNNNNNNNNNNNNNNNNNNNNNN/.````````````````````````````</span><br>" +
-    "<span>``````````````````````````./NNNNNNNNNNNNNNN/.````````.````.-/+NNNNNNNNNNNNNNNNNNNNN/.``````````````````````````</span><br>" +
-    "<span>````````````````````````./NNNNNNNNNNNNNNNNNNN/.```````````````:NNNNNNNNNNNNNNNNNNNNNN/.````````````````````````</span><br>" +
-    "<span>``````````````````````.:NNNNNNNNNNNNNNNNNNNNNNN:```````````````-NNNNNNNNNNNNNNNNNNNNNNN/.``````````````````````</span><br>" +
-    "<span>````````````````````.:NNNNNNNNNNNNNNNNNNNNNNNNN:````````````````+NNNNNNNNNNNNNNNNNNNNNNNN/.````````````````````</span><br>" +
-    "<span>``````````````````.:NNNNNNNNNNNNNNNNNNNNNNNNNNN-````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNN/```````````````````</span><br>" +
-    "<span>`````````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNN/````````````````+NNNNNNNNNNNNNNNNNNNNNNNNNNN+/`````````````````</span><br>" +
-    "<span>```````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/````````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNN+:```````````````</span><br>" +
-    "<span>`````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+-````````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNN+:`````````````</span><br>" +
-    "<span>```````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+:````````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNN+:```````````</span><br>" +
-    "<span>`````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-+:`````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNN+:`````````</span><br>" +
-    "<span>```````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NN+:`````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNN+:```````</span><br>" +
-    "<span>`````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNN+:`````````:+////+NNNNNNNNNNNNNNNNNNNNNN+:`````</span><br>" +
-    "<span>```:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNN+:```````````````-/NNNNNNNNNNNNNNNNNNNNN+:```</span><br>" +
-    "<span>`-+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNN+:```````````````.+NNNNNNNNNNNNNNNNNNNNN+-`</span><br>" +
-    "<span>.NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNN/```````````````.NNNNNNNNNNNNNNNNNNNNNNN-</span><br>" +
-    "<span>-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNN:````````````````/NNNNNNNNNNNNNNNNNNNNNN/</span><br>" +
-    "<span>`:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNN+```````````````.NNNNNNNNNNNNNNNNNNNNNN/`</span><br>" +
-    "<span>```/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNNN+.````````````-+NNNNNNNNNNNNNNNNNNNN+-``</span><br>" +
-    "<span>````./NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNNNNN/-```````.:+NNNNNNNNNNNNNNNNNNNN+-````</span><br>" +
-    "<span>``````./NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNNNNNNNN++//++NNNNNNNNNNNNNNNNNNNNN+-``````</span><br>" +
-    "<span>````````./NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+-````````</span><br>" +
-    "<span>``````````./NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+:``````````</span><br>" +
-    "<span>````````````./NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+-``````.+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+:````````````</span><br>" +
-    "<span>``````````````./NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/.``````````-+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+:``````````````</span><br>" +
-    "<span>````````````````./NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN:``````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNN+:````````````````</span><br>" +
-    "<span>``````````````````-/NNNNNNNNNNNNNNNNNNNNNNNNNNN/````````````````+NNNNNNNNNNNNNNNNNNNNNNNNNN+:``````````````````</span><br>" +
-    "<span>````````````````````-/NNNNNNNNNNNNNNNNNNNNNNNNN-````````````````/NNNNNNNNNNNNNNNNNNNNNNNN+:````````````````````</span><br>" +
-    "<span>``````````````````````-/NNNNNNNNNNNNNNNNNNNNNNN/````````````````+NNNNNNNNNNNNNNNNNNNNNN+:``````````````````````</span><br>" +
-    "<span>````````````````````````-+NNNNNNNNNNNNNNNNNNNNNN-``````````````:NNNNNNNNNNNNNNNNNNNNN+:````````````````````````</span><br>" +
-    "<span>``````````````````````````-+NNNNNNNNNNNNNNNNNNNNN:```````````./NNNNNNNNNNNNNNNNNNNN+:``````````````````````````</span><br>" +
-    "<span>````````````````````````````-+NNNNNNNNNNNNNNNNNNNN+/-.```..:/NNNNNNNNNNNNNNNNNNNN+:````````````````````````````</span><br>" +
-    "<span>``````````````````````````````-+NNNNNNNNNNNNNNNNNNNNNNN++NNNNNNNNNNNNNNNNNNNNNN+/``````````````````````````````</span><br>" +
-    "<span>````````````````````````````````-+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN+/.```````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````-+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/.`````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````-+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/.```````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/.`````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````:+NNNNNNNNNNNNNNNNNNNNNNNNNNNN/.```````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````:+NNNNNNNNNNNNNNNNNNNNNNNN/.`````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````````:+NNNNNNNNNNNNNNNNNNNN/.```````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````````:+NNNNNNNNNNNNNNNN/.`````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````````````:+NNNNNNNNNNNN/.```````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````````````:+NNNNNNNN/.`````````````````````````````````````````````````</span><br>" +
-    "<span>````````````````````````````````````````````````````.:://:-````````````````````````````````````````````````````</span><br>";
+    "<span>``````````````````````````````````````````````.-::/++ooNNNNNNNooo+//:.````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````.:/+NNNNNNNNNNNNNNNNNNNNNNNNNNNN+:.```````````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````.:+oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNo/.````````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````-/oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/```````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````-/oNNNNNNNNNNNNNNNNNo+/::-..``````````..:/+NNNNNNNNNo.`````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````./oNNNNNNNNNNNNNNNo+/-.`````````````````````````./NNNNNNNN`````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````-/oNNNNNNNNNNNNNN+/-`````````````````````````````````.oNNNNNN/````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````-/oNNNNNNNNNNNNN+:.``````````````````````````````````````-NNNNNNo````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````./oNNNNNNNNNNNNo/-``````````````````````````````````````````.NNNNNNo````````````````````````````````````````````````</span><br>" +
+    "<span>````````````-+NNNNNNNNNNNN+:.`````````````````````````````````````````````-NNNNNN/````````````````````````````````````````````````</span><br>" +
+    "<span>``````````:oNNNNNNNNNNN+:`````````````````````````````````````````````````oNNNNNN.````````````````````````````````````````````````</span><br>" +
+    "<span>````````:oNNNNNNNNNNo:```````````````````````````````````````````````````+NNNNNN/`````````````````````````````````````````````````</span><br>" +
+    "<span>``````-oNNNNNNNNNN+-````````````````````````````````````````````````````+NNNNNN+``````````````````````````````````````````````````</span><br>" +
+    "<span>`````/NNNNNNNNNN/.````````````````````````````````````````````````````-oNNNNNN+```````````````````````````````````````````````````</span><br>" +
+    "<span>```.oNNNNNNNNN+.````````````````````````````````````````````````````.+NNNNNNN/````````````````````````````````````````````````````</span><br>" +
+    "<span>``-NNNNNNNNNo:````````````````````````````````````````````````````-+NNNNNNNo-`````````````````````````````````````````````````````</span><br>" +
+    "<span>`-NNNNNNNNNo.``````````````````````````````````````````````````.:oNNNNNNNo:```````````````````````````````````````````````````````</span><br>" +
+    "<span>`oNNNNNNNNo.````````````````````````````````````````````````.:+NNNNNNNNo:`````````````````````````````````````````````````````````</span><br>" +
+    "<span>/NNNNNNNNN-```````````````````o/.```````````````````````.:+oNNNNNNNNN+-```````````````````````````````````````````````````````````</span><br>" +
+    "<span>NNNNNNNNNo````````````````````-oN+:-.````````````..-:/ooNNNNNNNNNo+:.`````````````````````````````````````````````````````````````</span><br>" +
+    "<span>NNNNNNNNN+`````````````````````./oNNooo+++++++ooooNNNNNNNNNNNo+/-``````````````````````````-::///:.```````````````````````````````</span><br>" +
+    "<span>/NNNNNNNNo````````````````````````-/+oNNNNNNNNNNNNNNNNoo+/:-.`````````````````````````````/NNNNNNN:```````````````````````````````</span><br>" +
+    "<span>`+NNNNNNNN:```````````````````````````.--::://::::-..````````````````````.://///:````````.NNNNNNNo````````````````````````````````</span><br>" +
+    "<span>``+NNNNNNNN:````````````````````````````````````````````````````````````.NNNNNNNo````````+NNNNNNN:````````````````````````````````</span><br>" +
+    "<span>```:NNNNNNNN/````````````````````````````````````````...````````````````+NNNNNNN-```````/NNNNNNNN.````````````````````````````````</span><br>" +
+    "<span>````.+NNNNNNNo:``````````````````````````````````-/+oNNNo/`````````````:NNNNNNNo```````/NNNNNNNNN.````````````````````````````````</span><br>" +
+    "<span>``````-+NNNNNNNo:`````````````````````````````./oNNNNNNNNN/```````````-NNNNNNNN/``````/NNN+/NNNNN/````````````````````````````````</span><br>" +
+    "<span>````````./oNNNNNNo/.````````````````````````.+NNNNNN+:-oNNo``````````.NNNNNNNNN+`````/NNN+``oNNNNN.```````````````````````````````</span><br>" +
+    "<span>``````````.:oNNNNNNN+:````````````````````./NNNNNN/.```oNNo-:-```````oNNN:oNNNNN````+NNN/```:NNNNNo.```.-://++++++++//-.``````````</span><br>" +
+    "<span>`````````````./oNNNNNNo/-``````````````-/+NNNNNNo-````-NNNNNNNo`````oNNN/`:NNNNN/`.oNNN/`````+NNNNNo/+oNNNNNNNNNNNNNNNNNo+/.``````</span><br>" +
+    "<span>````````````````-+oNNNNNNo:````````.:+oNNNNNNNNo.`````oNNNNNNN/````+NNN+```oNNNNN/oNNN:```````+NNNNNNNoo+/:-------://+ooNNNNo:````</span><br>" +
+    "<span>```````````````````-+oNNNNNo/```-/oNNNNNNNNNNNo.`````:NNNNNNNN````+NNNo````.NNNNNNNNo.```````.+NNNNNNo`````````````````.-/oNNNo-``</span><br>" +
+    "<span>``````````````````````:+NNNNNo+NNNNNo/-/NNNNNN.`````.NNNNNNNN/```/NNNo``````-NNNNNNo```````.+NNo/NNNNN-````````````````````.+NNN/`</span><br>" +
+    "<span>````````````````````````:NNNNNNNN+:.```NNNNNN/``````oNNNNNNNN```:NNNo.```````/NNNNNN-`````/NNN+.`oNNNN/``````````````````````-oNN-</span><br>" +
+    "<span>`````````````````````-/oNNNNNNNNN.````-NNNNNN.`````+NNNNNNNN/``-NNNo.```````/NNNNNNNo````+NNN:``.NNNNN-```````````````````````-NNo</span><br>" +
+    "<span>`````````````````.:+NNNNNo/--NNNN+````/NNNNNN`````:NNNNNNNNN``-NNNo.``````-oNNo+NNNNN```oNNN:``.oNNNN/`````````````````````````oNN</span><br>" +
+    "<span>``````````````.:+NNNNNo/.````oNNNN````+NNNNNN````-NNNNNNNNN+`-NNNo.``````+NNN+.oNNNNN``:NNNo`-/NNNNo-``````````````````````````NN/</span><br>" +
+    "<span>````````````:+NNNNNo/.```````+NNNN-```+NNNNNN```.NNNN+NNNNN/-NNNo.`````:NNNo-.+NNNNN:``+NNNNNNNNo+-``````````````````````````.oN/`</span><br>" +
+    "<span>`````````./oNNNNNo-``````````NNNNN-```:NNNNNN/`-NNNN/-NNNNNoNNNo`````.oNNo:-+NNNNNo-```.+oooo+:-```````````````````````````-/o+-``</span><br>" +
+    "<span>````````/NNNNNN+-```````````:NNNNN.````NNNNNNNoNNNN+`-NNNNNNNN+`````:NNNNooNNNNNo:`````````````````````````````````````````:-`````</span><br>" +
+    "<span>``````-oNNNNNN:````````````.oNNNNo`````-NNNNNNNNNN+```NNNNNNN/``````/NNNNNNo+/-```````````````````````````````````````````````````</span><br>" +
+    "<span>`````:NNNNNNN-````````````.oNNNNN-``````:NNNNNNNN/````-oNNo+.`````````....````````````````````````````````````````````````````````</span><br>" +
+    "<span>````.NNNNNNN/````````````/NNNNNN/````````./oNNo+-````````.````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````/NNNNNNN-``````````:oNNNNNN/``````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````+NNNNNNN/``````.:+NNNNNNNN:```````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````/NNNNNNNNo+/+oNNNNNNNNNN/`````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````oNNNNNNNNNNNNNNNNNNNN/.``````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````.oNNNNNNNNNNNNNNNo/-`````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>```````-/+ooNNNNoo+:-`````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>";
   logoParent.appendChild(logo);
   return logoParent;
 }
@@ -566,6 +319,216 @@ export function githubFunction() {
   return logoParent;
 }
 
+export function gitlabFunction() {
+  const logoParent = document.createElement("div");
+  logoParent.className = "logo-parent";
+  const logo = document.createElement("div");
+  logo.className = "logo gitlab-logo";
+  logo.innerHTML =
+    "<span>``````````````````oOo``````````````````````````````````````````````````````````````oOo``````````````````</span><br>" +
+    "<span>````````````````iNNNNNNO`````````````````````````````````````````````````````````NNNNNN#````````````````</span><br>" +
+    "<span>```````````````iNNNNNNNNo```````````````````````````````````````````````````````SNNNNNNNN```````````````</span><br>" +
+    "<span>``````````````ONNNNNNNNNN``````````````````````````````````````````````````````SNNNNNNNNNN``````````````</span><br>" +
+    "<span>`````````````iNNNNNNNNNNNN````````````````````````````````````````````````````oNNNNNNNNNNNN`````````````</span><br>" +
+    "<span>````````````ONNNNNNNNNNNNNi``````````````````````````````````````````````````o#NNNNNNNNNNNN#````````````</span><br>" +
+    "<span>```````````ONNNNNNNNNNNNNNNi`````````````````````````````````````````````````NNNNNNNNNNNNNNNN```````````</span><br>" +
+    "<span>``````````oNNNNNNNNNNNNNNNNNo```````````````````````````````````````````````NNNNNNNNNNNNNNNNNN``````````</span><br>" +
+    "<span>`````````oNNNNNNNNNNNNNNNNNN#o`````````````````````````````````````````````iNNNNNNNNNNNNNNNNNNN`````````</span><br>" +
+    "<span>````````oNNNNNNNNNNNNNNNNNNNNN````````````````````````````````````````````iNNNNNNNNNNNNNNNNNNNNS````````</span><br>" +
+    "<span>```````oNNNNNNNNNNNNNNNNNNNNNNN``````````````````````````````````````````oNNNNNNNNNNNNNNNNNNNNNNN```````</span><br>" +
+    "<span>``````oNNNNNNNNNNNNNNNNNNNNNNNNi````````````````````````````````````````o#NNNNNNNNNNNNNNNNNNNNNNNi``````</span><br>" +
+    "<span>``````NNNNNNNNNNNNNNNNNNNNNNNNNNO```````````````````````````````````````SNNNNNNNNNNNNNNNNNNNNNNNNNS`````</span><br>" +
+    "<span>````oNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNi````</span><br>" +
+    "<span>````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNi```</span><br>" +
+    "<span>```NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNi``</span><br>" +
+    "<span>``SSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSO`</span><br>" +
+    "<span>`iSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSo</span><br>" +
+    "<span>`SSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSi</span><br>" +
+    "<span>oSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSi</span><br>" +
+    "<span>oSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSi</span><br>" +
+    "<span>`SSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSi</span><br>" +
+    "<span>`iSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS`</span><br>" +
+    "<span>``SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSo`</span><br>" +
+    "<span>```iSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSo``</span><br>" +
+    "<span>````OSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS````</span><br>" +
+    "<span>``````iSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSo`````</span><br>" +
+    "<span>````````OSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSi````````</span><br>" +
+    "<span>```````````OSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSi```````````</span><br>" +
+    "<span>``````````````oiSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSiiiiiSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSO``````````````</span><br>" +
+    "<span>``````````````````iSSSSSSSSSSSSSSSSSSSSSSSSSSSiiiiiiiiiiiiSSSSSSSSSSSSSSSSSSSSSSSSSSSSo`````````````````</span><br>" +
+    "<span>`````````````````````OSSSSSSSSSSSSSSSSSSSSSiiiiiiiiiiiiiiiiiiSSSSSSSSSSSSSSSSSSSSSi`````````````````````</span><br>" +
+    "<span>````````````````````````oiSSSSSSSSSSSSSSiiiiiiiiiiiiiiiiiiiiiiiiiSSSSSSSSSSSSSSO````````````````````````</span><br>" +
+    "<span>````````````````````````````iSSSSSSSSiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiSSSSSSSSo```````````````````````````</span><br>" +
+    "<span>```````````````````````````````OSiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiSi```````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiio``````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````Oiiiiiiiiiiiiiiiiiiiiiiiiiiio`````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````oiiiiiiiiiiiiiiiiiiiiO`````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````oiiiiiiiiiiiiiio````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````Oiiiiiiio```````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>";
+  logoParent.appendChild(logo);
+  return logoParent;
+}
+
+export function nodeFunction() {
+  const logoParent = document.createElement("div");
+  logoParent.className = "logo-parent";
+  const logo = document.createElement("div");
+  logo.className = "logo node-logo";
+  logo.innerHTML =
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````NNNN(```````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````NNNNNNNN````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````NNNNNNNN````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````NNNNNNNN````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````NNNNNNNN````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````NNNNNNNN````````````````````````````````````````</span><br>" +
+    "<span>`````````````````nNNN#``````````````````````````````SSSn``````````````````````````````NN#```NNNNNNNN```````````````````SNN#`````````````````</span><br>" +
+    "<span>`````````````oNNNNNNNNNNNN`````````````````````nSSSSSSSSSSSS``````````````````````NNNNNNNNNNNNNNNNNN```````````````#NNNNNNNNNNN`````````````</span><br>" +
+    "<span>`````````NNNNNNNNNNNNNNNNNNNNNn````````````SSSSSSSSSSSSSSSSSSSSS`````````````#NNNNNNNNNNNNNNNNNNNNNN```````````NNNNNNNNNNNNNNNNNNNNS````````</span><br>" +
+    "<span>```````NNNNNNNNNNNNNNNNNNNNNNNNNn````````SSSSSSSSSSSSSSSSSSSSSSSSS`````````NNNNNNNNNNNNNNNNNNNNNNNNN````````SNNNNNNNNNNNNNNNNNNNNNNNNN``````</span><br>" +
+    "<span>```````NNNNNNNNNN(````NNNNNNNNNNn````````SSSSSSSSSSSSSSSSSSSSSSSSS`````````NNNNNNNNNN#```#NNNNNNNNNN````````SNNNNNNNNNN````NNNNNNNNNNN``````</span><br>" +
+    "<span>```````NNNNNNNNo````````NNNNNNNNn````````SSSSSSSSSSSSSSSSSSSSSSSSS`````````NNNNNNNN`````````NNNNNNNN````````SNNNNNNNN``SSSS(`#NNNNN(````````</span><br>" +
+    "<span>```````NNNNNNNNo````````NNNNNNNNn````````SSSSSSSSSSSSSSSSSSSSSSSSS`````````NNNNNNNN`````````NNNNNNNN````````SNNNNNNNN``SSSS(`#N`````````````</span><br>" +
+    "<span>```````NNNNNNNNo````````NNNNNNNNn````````SSSSSSSSSSSSSSSSSSSSSSSSS`````````NNNNNNNNNN(```oNNNNNNNNNN````````SNNNNNNNNNN(````````````````````</span><br>" +
+    "<span>```````NNNNNNNNo````````NNNNNNNNn````````SSSSSSSSSSSSSSSSSSSSSSSSS`````````NNNNNNNNNNNNNNNNNNNNNNNNN````````SNNNNNNNNNNNNNNN````````````````</span><br>" +
+    "<span>```````NNNNNo``````````````NNNNNn``````````nSSSSSSSSSSSSSSSSSSSn`````````````NNNNNNNNNNNNNNNNNNNN#`````````````#NNNNNNNNNNNNNNNN````````````</span><br>" +
+    "<span>```````#```````````````````````#````````````````SSSSSSSSSSS``````````````````````oNNNNNNNNNNNn`````````````````````nNNNNNNNNNN#`````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````(S(``````````````````````````````nNNN```````````````````````````````NNn`````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>";
+  logoParent.appendChild(logo);
+  return logoParent;
+}
+
+export function nestFunction() {
+  const logoParent = document.createElement("div");
+  logoParent.className = "logo-parent";
+  const logo = document.createElement("div");
+  logo.className = "logo nest-logo";
+  logo.innerHTML =
+    "<span>``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````````O%%%O,```````````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````````````````````````ONNNNN/````/NO,````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````ONNNNN%``,NNNNNNO`````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````ONNNN,``ONNNNNNNNNNN``````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````````````````````````ONN,`/NNNNNNNNNNNNNNNNN````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````````````````````ON/`/NNNNNNNNNNNNNNNNNNNN/``````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````,,//MMMMMMMM//,,```````````````OM`NNNNNNNNNNNNNNNNNNNNNNNO`````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````MONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNOM/`````,,NNNNNNNNNNNNNNNNNNNNNNNNO````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNOM,ONNNNNNNNNNNNNNNNNNNNNNNN/```````````````````````````````</span><br>" +
+    "<span>````````````````````````````MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNM```````````````````````````````</span><br>" +
+    "<span>`````````````````````````,ONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNM```````````````````````````````</span><br>" +
+    "<span>```````````````````````MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/````````OO`````````````````````</span><br>" +
+    "<span>````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO````````,NNNN```````````````````</span><br>" +
+    "<span>````````````````MONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO`````````ONNNNNO`````````````````</span><br>" +
+    "<span>```````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/`````````NNNNNNNNNM```````````````</span><br>" +
+    "<span>````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`````````MNNNNNNNNNNNN``````````````</span><br>" +
+    "<span>``/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`````````/NNNNNNNNNNNNNNNM````````````</span><br>" +
+    "<span>`MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN``````````NNNNNNNNNNNNNNNNNNNO```````````</span><br>" +
+    "<span>`/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````````/NNNNNNNNNNNNNNNNNNNNNNNO``````````</span><br>" +
+    "<span>```/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO/,````````,MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO`````````</span><br>" +
+    "<span>``````,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN````````</span><br>" +
+    "<span>```````MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/```````</span><br>" +
+    "<span>`````````MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````</span><br>" +
+    "<span>`````````````ONN/NNNNNOOO/MM/'''/M/OOONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,`````</span><br>" +
+    "<span>`````````````OO`MNNO```````````````````````,/ONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/`````</span><br>" +
+    "<span>````````````````MO```````````````````````````````MONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,````</span><br>" +
+    "<span>`````````````````````````````````````````````````````MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/````</span><br>" +
+    "<span>````````````````````````````````````````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````ONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````````ONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNM````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````````````%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`````</span><br>" +
+    "<span>````````````````````````````````````/NNNNNNM````````````````````````NNNNNNNNNNNNNN/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNM`````</span><br>" +
+    "<span>`````````````````````````````````,NNNNNNNNNN/```````````````````````MNNNNNNNNNNNN/,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN``````</span><br>" +
+    "<span>````````````````````````````````MNNNNNNNNNNM````````````/````,NNNNNM`ONNNNNNNNNNO``%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNOONNNNNNNN```````</span><br>" +
+    "<span>```````````````````````````````,NNNNNNNNNNN,```````````MO```ONNNNNNNNONNNNNNNNNO```%NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,MNNNNNNN,```````</span><br>" +
+    "<span>````````````````````````````````NNNNNNNNNNNN/`````````ONO`/NNNNNNNNNNNNNNNNNNN/```,NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO`,NNNNNN,````````</span><br>" +
+    "<span>````````````````````````````````MNNNNNNNNNNNNNNNM,``/NNNNNNNNNNNNNNNNNNNNNNNN,````MNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN```%NNNN``````````</span><br>" +
+    "<span>`````````````````````````````````ONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/``````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,```NNNO```````````</span><br>" +
+    "<span>``````````````````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN,```````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN`````NN/````````````</span><br>" +
+    "<span>````````````````````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNM`````````ONNNNNNNNNNNNNNNNNNNNNNNNNOMNNNNNNNNN``````O``````````````</span><br>" +
+    "<span>``````````````````````````````````/NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO,```````````NNNNNNNNNNNNNNNNNNNNNNNNNNM,NNNNNNNNO``````````````````````</span><br>" +
+    "<span>`````````````````````````````````````,/ONNNNNNNNNNNNNNNNNNNNN//``````````````/NNNNNNNNNNNNNNNNNNNNNNNNNO``/NNNNNNN,```````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````,,,///,,`````````````````````MNNNNNNNNNNNNNNNNNNNNNNNNNO```/NNNNNN/`````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````ONNNNNNNNNOONNNNNNNNNNNNNN/````/NNNNN/```````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````````````/NNNNN//,```/NNNNNNNNNNNNNN,`````MNNNNM`````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````````````````MNNNNNNNNNNNNN/```````ONNN,```````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````````,NNNNNNNNNNNNO,`````````NNM``````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````````````````````ONNNNNNNNNNN/```````````//`````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````````````````,NNNNNNNNNN/```````````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````````ONNNNN%/,`````````````````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>";
+  logoParent.appendChild(logo);
+  return logoParent;
+}
+
+export function mongoFunction() {
+  const logoParent = document.createElement("div");
+  logoParent.className = "logo-parent";
+  const logo = document.createElement("div");
+  logo.className = "logo mongo-logo";
+  logo.innerHTML =
+    "<span>`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````.o``````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````oooO`````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````,oooooOO%```````````````````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````````````````OoooooooOOOOO`````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````ooooooooooOOOOOOO.``````````````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````````````ooooooooooooOOOOOOOOO.````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````ooooooooooooooOOOOOOOOOOO```````````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````````.oOoooooooooooooOOOOOOOOOOOOO`````````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````ooOoOooooooooooooOOOOOOOOOOOOOO.```````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````OoooooooooooooooooOOOOOOOOOOOOOOOO``````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````OOoooooooooooooooooOOOOOOOOOOOOOOOOO`````````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````OOOOooooooooooooooooOOOOOOOOOOOOOOOOOO````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````oOOOoooOoooooooooooooOOOOOOOOOOOOOOOOOOO```````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````oOOOOOOoooooooooooooooOOOOOOOOOOOOOOOOOOOo``````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````OOOOOoOOOOooooOoooooooOOOOOOOOOOOOOOOOOOOO,`````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````%OOOOOoOoOooOooooooooooOOOOOOOOOOOOOOOOOOOOO`````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````OOOOOOOOOOOooooOoooooooOOOOOOOOOOOOOOOOOOOOO%````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````OOOOOOOOOOOoOOoooooooooOOOOOOOOOOOOOOOOOOOOOO````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````%OOOOOOOOOOOOOoOOoooooooOOOOOOOOOOOOOOOOOOOOOO````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````%OOOOOOOOoOoOOooooooooooOOOOOOOOOOOOOOOOOOOOOO````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````%OOOOOOOOOOOOOooooooOoooOOOOOOOOOOOOOOOOOOOOOO````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````.OOOOOOOOOOOOOOOooooooooOOOOOOOOOOOOOOOOOOOOOO````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````OOOOOOOOOOOOOOOOoooooooOOOOOOOOOOOOOOOOOOOOOO````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````,OOOOOOOOOOOOOOOOOooooOOOOOOOOOOOOOOOOOOOOOO,````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````OOOOOOOOOOOooOOOooooooOOOOOOOOOOOOOOOOOOOOO`````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````OOOOOOOOOOOOOOOOoooooOOOOOOOOOOOOOOOOOOOO``````````````````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````````````````OOOOOOOOOOOoOooOooooOOOOOOOOOOOOOOOOOOO,``````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````OOOOOOOOOOOoOoOOoooOOOOOOOOOOOOOOOOOO.```````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````OOOOOOOOOOOOOOOOooOOOOOOOOOOOOOOOOO`````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````,OOOOOOOOOOOOooOoOOOOOOOOOOOOOOOO``````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````oOOOOOOOOoOOoooOOOOOOOOOOOOOO,```````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````OOOOOOOOOOOO%OOOOOOOOOOOO%`````````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````oOOOOOOOOO%OOOOOOOOOO%```````````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````,OOOOOOo%oOOOOOOO``````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````oOOO%%,oOOO%````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````````%%,%,,```````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````,%,,````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````.,,.````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````````,,`````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````````,.`````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````````````````````````.%OOO,.``.%OOOOO```````.oOOO...%OOOO.```</span><br>" +
+    "<span>```````````````````````````````````````````````````````````````````````````````````````````````OOO`````````%OOO.``````OOO``````OOO.``</span><br>" +
+    "<span>````.o```%O%`````%Oo.```````````,oOO,`````````.%.``%SO,``````````%OO%```````````.oOO%``````````OOO```````````OOO.`````OOO``````OOo```</span><br>" +
+    "<span>``,MNNO```.NNNM,```NNN%`````.NN`````ONNN````,MNNM,``.MNNO````.NN````%NNoO.```MN.````%NNM```````OOO```````````oOOO`````OOOOOOOOOO,````</span><br>" +
+    "<span>```MNN``````NN,`````SNM````%NN.``````.NNN````SNN.`````MNM````MNS`````MNO````NN%```````MNM``````OOO```````````oOOo`````OOO``````%OOO.`</span><br>" +
+    "<span>```MNN``````NN,`````SNM````ONN,```````MNM````ONN.`````MNM````,NNS```OMo````.NNo```````SNM``````OOO```````````OOO`````.OOO```````%OOO`</span><br>" +
+    "<span>```MNN`````.NN,`````SNM`````MNN``````.NM`````NNN.`````MNN``````,M```````````NNNo``````MN,``````OOO`````````OOO```````.OOO```````OOO``</span><br>" +
+    "<span>`SMNNNMS`.MNNNNN,`%MNNNMN`````NNNMSNMS`````SMNNNNM.`SMNNNNM```NNNNNNNNMM%`````SNNMSSMN.`````.OOOOOOOOOOOOO%````````OOOOOOOOOOOOo.````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````NS```````NNM```````````````````````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````````````````````````oNM````````SN.```````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````,NNNNNSNMN``````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>";
+  logoParent.appendChild(logo);
+  return logoParent;
+}
+
 export function unityFunction() {
   const logoParent = document.createElement("div");
   logoParent.className = "logo-parent";
@@ -628,63 +591,74 @@ export function unityFunction() {
   return logoParent;
 }
 
-export function pythonFunction() {
+export function linuxFunction() {
   const logoParent = document.createElement("div");
   logoParent.className = "logo-parent";
   const logo = document.createElement("div");
-  logo.className = "logo python-logo";
+  logo.className = "logo linux-logo";
   logo.innerHTML =
-    "<span>````````````````````````````````````..-:::SSSSSSSSSSSSSSS::--..`````````````````````````````````````</span><br>" +
-    "<span>```````````````````````````````.-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:-.````````````````````````````````</span><br>" +
-    "<span>````````````````````````````.:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:.`````````````````````````````</span><br>" +
-    "<span>```````````````````````````:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:.```````````````````````````</span><br>" +
-    "<span>``````````````````````````:SSSSSS-`````-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-``````````````````````````</span><br>" +
-    "<span>``````````````````````````SSSSSS.```````-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS``````````````````````````</span><br>" +
-    "<span>``````````````````````````SSSSSS````````.SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.`````````````````````````</span><br>" +
-    "<span>``````````````````````````SSSSSSS.`````.SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.`````````````````````````</span><br>" +
-    "<span>``````````````````````````SSSSSSSSS:-:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.`````````````````````````</span><br>" +
-    "<span>``````````````````````````SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.`````````````````````````</span><br>" +
-    "<span>``````````````````````````SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.`````````````````````````</span><br>" +
-    "<span>``````````````````````````-----------------.......:SSSSSSSSSSSSSSSSSSSSSSS.`````````````````````````</span><br>" +
-    "<span>``````````````````````````````````````````````````:SSSSSSSSSSSSSSSSSSSSSSS.```...........```````````</span><br>" +
-    "<span>``````````.--:::::::::::::::::::::::::::::::::::::SSSSSSSSSSSSSSSSSSSSSSSS.``:NNNNNNNNNNhyNS.```````</span><br>" +
-    "<span>```````.:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.``SNNNNNNNNNNNNNNNN-`````</span><br>" +
-    "<span>`````-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.``SNNNNNNNNNNNNNNNNNS````</span><br>" +
-    "<span>````:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.``SNNNNNNNNNNNNNNNNNNy```</span><br>" +
-    "<span>```SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.``SNNNNNNNNNNNNNNNNNNNy``</span><br>" +
-    "<span>``SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS.``SNNNNNNNNNNNNNNNNNNNNS`</span><br>" +
-    "<span>`-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:```SNNNNNNNNNNNNNNNNNNNNN.</span><br>" +
-    "<span>`SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-```NNNNNNNNNNNNNNNNNNNNNNS</span><br>" +
-    "<span>-SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:-```-NNNNNNNNNNNNNNNNNNNNNNh</span><br>" +
-    "<span>:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS::.````hNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:::-.````.hNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS::::---------------------------..``````.SNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>SSSSSSSSSSSSSSSSSSSSSSSSSSSS:-.`````````````````````````````````````.:SyNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>SSSSSSSSSSSSSSSSSSSSSSSSSS:``````-SSNyyhhhhhhhhhhhhhhhhhhhhhhhhhhhNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>SSSSSSSSSSSSSSSSSSSSSSSSS.````:NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>:SSSSSSSSSSSSSSSSSSSSSSS````:hNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN</span><br>" +
-    "<span>-SSSSSSSSSSSSSSSSSSSSSS-```SNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNh</span><br>" +
-    "<span>`SSSSSSSSSSSSSSSSSSSSSS```SNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNS</span><br>" +
-    "<span>`:SSSSSSSSSSSSSSSSSSSS:```hNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNh`</span><br>" +
-    "<span>``SSSSSSSSSSSSSSSSSSSS:```NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN-`</span><br>" +
-    "<span>``.SSSSSSSSSSSSSSSSSSS:```NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNS``</span><br>" +
-    "<span>```.SSSSSSSSSSSSSSSSSS:```NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNh:```</span><br>" +
-    "<span>`````:SSSSSSSSSSSSSSSS:```NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNhS.````</span><br>" +
-    "<span>``````.:SSSSSSSSSSSSSS:```NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNhyS.``````</span><br>" +
-    "<span>`````````.-:::::::::::-```NNNNNNNNNNNNNNNNNNNNNNNNyNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNS/-.`````````</span><br>" +
-    "<span>``````````````````````````NNNNNNNNNNNNNNNNNNNNNNNN``````````````````````````````````````````````````</span><br>" +
-    "<span>``````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSS-`````````````````````````</span><br>" +
-    "<span>``````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/`````````````````````````</span><br>" +
-    "<span>``````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/`````````````````````````</span><br>" +
-    "<span>``````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNhNSSNhNNNNNNN/`````````````````````````</span><br>" +
-    "<span>``````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNS``````SNNNNNN/`````````````````````````</span><br>" +
-    "<span>``````````````````````````NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNy````````yNNNNN/`````````````````````````</span><br>" +
-    "<span>``````````````````````````hNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNh```````.hNNNNN/`````````````````````````</span><br>" +
-    "<span>``````````````````````````-NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNh/.``./hNNNNNN.`````````````````````````</span><br>" +
-    "<span>```````````````````````````.NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNh-``````````````````````````</span><br>" +
-    "<span>`````````````````````````````-SNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNy/````````````````````````````</span><br>" +
-    "<span>````````````````````````````````-SNhNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNyS/.``````````````````````````````</span><br>" +
-    "<span>`````````````````````````````````````-:/SSNyyhhddddddddhhyNNSS/-.```````````````````````````````````</span><br>";
+    "<span>``````````````````````````````````````````````.O(SMMMMNS(n,.`````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````,SMNNNNNNNNNNNNNNNMN(``````````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````````SMNNNNNNNNNNNNNNNNNNNNNNN,```````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````````(MNNNNNNNNNNNNNNNNNNNNNNNNNM(``````````````````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````(MNNNNNNNNNNNNNNNNNNNNNNNNNNNMN`````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````OMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNMn````````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````(MNNNNNNNNNNNNNNNNNMNMNNNNNNNNNNN.```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````(MNn..ONNNNNNNNMS,`````.NMNNNNNNN.```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````SS.``.``OMNNNNM,``.OO.```(MNNNNNN,```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````SS`nMNMS`(MNNM(`.NNNNMn``ONNNNNNN.```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````(M,OMNNMO((((S(O,NNNNMO`.SMNNNNNN.```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````nMM(n(O,OO,,OOO,,OOn((,OMNNNNNNNN,```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````nMSO,,,,,,,,,,,,,,,,,,,,ONMNNNNNNO```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````nSO,,,,,,,,,,,,,,,,,O(O,OSMNNNNNM(```````````````````````````````````</span><br>" +
+    "<span>````````````````````````````````````NNNS((OO,,,,,,OOO((,OO(n.SNNNNNNNM(``````````````````````````````````</span><br>" +
+    "<span>```````````````````````````````````SMNM`.nOOOOnnOO,,,OO(O````nMNNNNNNNN@.````````````````````````````````</span><br>" +
+    "<span>``````````````````````````````````SMNMn````,(nnnnnnnn.```````.NNNNNNNNNNN(```````````````````````````````</span><br>" +
+    "<span>````````````````````````````````.SMNNS.```````````````````````nMNNNNNNNNNNN,`````````````````````````````</span><br>" +
+    "<span>```````````````````````````````,MNNNNO`````````````````````````SMNNNNNNNNNNNS.```````````````````````````</span><br>" +
+    "<span>``````````````````````````````(MNNNNS```````````````````````````(MNNNNNNNNNNNMO``````````````````````````</span><br>" +
+    "<span>````````````````````````````.NNNNNMn`````````````````````````````(MNNNNNNNNNNNNM.````````````````````````</span><br>" +
+    "<span>```````````````````````````SMNNNNM,```````````````````````````````SNNNNNNNNNNNNNM(```````````````````````</span><br>" +
+    "<span>`````````````````````````ONNNNNNNO`````````````````````````````````SMNNNNNNNNNNNNNN.`````````````````````</span><br>" +
+    "<span>````````````````````````SMNMSSMS````````````````````````````````````.SNM(SNNNNNNNNNM(````````````````````</span><br>" +
+    "<span>``````````````````````nMNMSnMN,``````````````````````````````````````.SNNNOSMNNNNNNNMS.``````````````````</span><br>" +
+    "<span>````````````````````.SMNN(SMN,`````````````````````````````````````````NNNMn,MNNNNNNNNN``````````````````</span><br>" +
+    "<span>```````````````````,MNNNSnMMO```````````````````````````````````````````NNNMOONNNNNNNNNM.````````````````</span><br>" +
+    "<span>``````````````````nMNNNM,NM(````````````````````````````````````````````,NNNS.NNNNNNNNNNN.```````````````</span><br>" +
+    "<span>`````````````````nNNNNMn,MN``````````````````````````````````````````````(MNS.SNNNNNNNNNNO```````````````</span><br>" +
+    "<span>````````````````.SNNNNMO,MO``````````````````````````````````````````````nNM,,NNNNNNNNNNM(```````````````</span><br>" +
+    "<span>````````````````,NNNNNMS`(,``````````````````````````````````````````````nM..SNNNNNNNNNNNn```````````````</span><br>" +
+    "<span>````````````````,NNMNNNMO```````````````````````````````````````````````,nSNMMMMMNS((NNNN,```````````````</span><br>" +
+    "<span>```````````````ONnO,,OSMNn```````````````````````````````````````````.ONNNNNNNNNNNNNNNMMN,.``````````````</span><br>" +
+    "<span>`````````````.SO,,,,,,,,(MMn````````````````````````````````````````NOOMNNNNNNNNNNNNN(O,,,OSS````````````</span><br>" +
+    "<span>``````````,nS(O,,,,,,,,,,OSNMNO````````````````````````````````````nn,,(MNNNNNNNNNNNO,,,,,,,nn```````````</span><br>" +
+    "<span>```ONSnOOOO,,,,,,,,,,,,,,,,ONNNNN(`````````````````````````````````Sn,,,SMNNNNNNN(O,,,,,,,,,O(.``````````</span><br>" +
+    "<span>``(n,,,,,,,,,,,,,,,,,,,,,,,,,(NNNNNMS.`````````````````````````````NO,,,,OOOOOO,,,,,,,,,,,,,,ON.`````````</span><br>" +
+    "<span>``NO,,,,,,,,,,,,,,,,,,,,,,,,,,O(MNNNNN@.```````````````````````````MO,,,,,,,,,,,,,,,,,,,,,,,,,,,N(```````</span><br>" +
+    "<span>``Sn,,,,,,,,,,,,,,,,,,,,,,,,,,,,OSMNNMN``````````````````````````.NNO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,n@O````</span><br>" +
+    "<span>``n(,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OMn`````````````````````````.(MNNN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,nS.``</span><br>" +
+    "<span>``(O,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,nNn.`````````````````.O(MMNNNNM(,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OSn```</span><br>" +
+    "<span>`,(,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,nNNMMMNSSSSSSNNMMMNNNNNNNNNNN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,OS(.`````</span><br>" +
+    "<span>`nO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,(MNNNNNNNNNNNNNNNNNNNNNNNNn,,,,,,,,,,,,,,,,,,,,,,,,,OSS,`````````</span><br>" +
+    "<span>`,NO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,nNNNNMMMMMMMMMMMMNNNNNNNNNO,,,,,,,,,,,,,,,,,,,,,O(NO`````````````</span><br>" +
+    "<span>````.OS@NSn,,,,,,,,,,,,,,,,,,,,,,,,,,,,,(n```````````````````,(MMNO,,,,,,,,,,,,,,,,,,OSS.````````````````</span><br>" +
+    "<span>``````````````.O(M@M(O,,,,,,,,,,,,,,,,O@,````````````````````````n(,,,,,,,,,,,,,,,OM(````````````````````</span><br>" +
+    "<span>```````````````````````,SMSnOOOOOOOOSS.```````````````````````````.M(OO,,,,,,,OOS(```````````````````````</span><br>" +
+    "<span>``````````````````````````````````````````````````````````````````````.nSNNNSn.``````````````````````````</span><br>" +
+    "<span>`````````````````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>``````````````````````````O((O```````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>`(NNNNNNNNNNn````````````(NNNNS``````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````nNNNNn````````````````OSSO```````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````nNNNNn```````````````````````````````````````````````````````````````````````````````````````````````</span><br>" +
+    "<span>````nNNNNn`````````````,(NNNNN.````OSMNNNS,,SMNNNNNNN.````,nNNNNNn````.nNMNNN(```ONNNNNNNNN``.SNNNNNN,```</span><br>" +
+    "<span>````nNNNNn```````````````nNNNN.``````nNNNNn.````(NNNNS.`````.SNNNn``````.SNNN(``````.SNNNN,```.NN(```````</span><br>" +
+    "<span>````nNNNNn```````````````nNNNN.``````nNNNN.``````ONNNS.`````.SNNNn``````.SNNN(````````ONNNNN.(NS.````````</span><br>" +
+    "<span>````nNNNNn```````````````nNNNN.``````nNNNN.``````ONNNS.`````.SNNNn``````.SNNN(``````````nNNNNN,``````````</span><br>" +
+    "<span>````nNNNNn````````...````nNNNN.``````nNNNN.``````ONNNS.`````.SNNNn``````.SNNN(``````````(NNNNNN(`````````</span><br>" +
+    "<span>````nNNNNn```````.SNS.```nNNNN.``````nNNNN.``````ONNNS.`````.SNNN(``````.SNNN(````````(NNO``(NNNNO```````</span><br>" +
+    "<span>````nNNNNn```````nNNS.```nNNNN.``````nNNNN.``````ONNNS.``````(NNNNNSnn(SNNNNN(``````nNNn`````.SNNNN.`````</span><br>" +
+    "<span>`(NNNNNNNNNNNNNNNNNNS.,MNNNNNNNNS..MNNNNNNNNn``(NNNNNNNNS.`````(MMMMNn``.NMMMMM@,ONNNNNNS.``,MMMMMMMMS.``</span><br>";
+
   logoParent.appendChild(logo);
   return logoParent;
 }

@@ -353,38 +353,6 @@ body {
           margin: auto;
         }
 
-        .html-logo {
-          color: $htmlOrange;
-          border-radius: 0 0 40px 40px;
-          text-shadow: 0 0 1px $htmlOrange;
-          width: 130px;
-
-          @include responsive(phone) {
-            width: 69px;
-            border-radius: 0 0 25px 25px;
-          }
-          @include responsive(tabletSmall) {
-            width: 69px;
-            border-radius: 0 0 25px 25px;
-          }
-        }
-
-        .css-logo {
-          color: $cssBlue;
-          border-radius: 0 0 40px 40px;
-          text-shadow: 0 0 1px $cssBlue;
-          width: 130px;
-
-          @include responsive(phone) {
-            width: 69px;
-            border-radius: 0 0 25px 25px;
-          }
-          @include responsive(tabletSmall) {
-            width: 69px;
-            border-radius: 0 0 25px 25px;
-          }
-        }
-
         .js-logo {
           color: $javascriptYellow;
           text-shadow: 0 0 1px $javascriptYellow;
@@ -415,124 +383,49 @@ body {
 
         .sass-logo {
           color: $sassPink;
-          border-radius: 15px;
           text-shadow: 0 0 1px $sassPink;
-          width: 165px;
-
-          @include responsive(phone) {
-            width: 75px;
-            border-radius: 10px;
-          }
-          @include responsive(tabletSmall) {
-            width: 75px;
-            border-radius: 10px;
-          }
         }
 
         .react-logo {
           color: $reactBlue;
-          border-radius: 30px;
           text-shadow: 0 0 1px $reactBlue;
-          width: 140px;
-
-          @include responsive(phone) {
-            width: 70px;
-            border-radius: 15px;
-          }
-          @include responsive(tabletSmall) {
-            width: 70px;
-            border-radius: 15px;
-          }
-        }
-
-        .npm-logo {
-          color: $npmRed;
-          text-shadow: 0 0 1px $npmRed;
-          width: 180px;
-
-          @include responsive(phone) {
-            width: 90px;
-          }
-          @include responsive(tabletSmall) {
-            width: 90px;
-          }
-        }
-
-        .git-logo {
-          color: $gitRed;
-          border-radius: 100px;
-          text-shadow: 0 0 1px $gitRed;
-          width: 135px;
-
-          @include responsive(phone) {
-            width: 70px;
-            border-radius: 50px;
-          }
-          @include responsive(tabletSmall) {
-            width: 70px;
-            border-radius: 50px;
-          }
         }
 
         .github-logo {
-          border-radius: 77px;
           text-shadow: 0 0 1px;
-          width: 140px;
+        }
 
-          @include responsive(phone) {
-            width: 70px;
-            border-radius: 50px;
-          }
-          @include responsive(tabletSmall) {
-            width: 70px;
-            border-radius: 50px;
-          }
+        .gitlab-logo {
+          color: $gitLabRed;
+          text-shadow: 0 0 1px $gitLabRed;
+        }
+
+        .node-logo {
+          color: $nodeGreen;
+          text-shadow: 0 0 1px $nodeGreen;
+        }
+
+        .nest-logo {
+          color: $nestRed;
+          text-shadow: 0 0 1px $nestRed;
+        }
+
+        .mongo-logo {
+          color: $mongoGreen;
+          text-shadow: 0 0 1px $mongoGreen;
         }
 
         .unity-logo {
-          border-radius: 20px;
           text-shadow: 0 0 1px;
-          width: 120px;
-
-          @include responsive(phone) {
-            width: 65px;
-            border-radius: 10px;
-          }
-          @include responsive(tabletSmall) {
-            width: 65px;
-            border-radius: 10px;
-          }
         }
 
-        .python-logo {
-          color: $pythonBlue;
-          border-radius: 50px;
-          width: 125px;
-
-          @include responsive(phone) {
-            width: 65px;
-            border-radius: 30px;
-          }
-          @include responsive(tabletSmall) {
-            width: 65px;
-            border-radius: 30px;
-          }
+        .linux-logo {
+          text-shadow: 0 0 1px;
         }
 
         .vscode-logo {
           color: $vscodeBlue;
-          border-radius: 30px;
           text-shadow: 0 0 1px $vscodeBlue;
-          width: 120px;
-
-          @include responsive(phone) {
-            width: 70px;
-            border-radius: 20px;
-          }
-          @include responsive(tabletSmall) {
-            width: 70px;
-            border-radius: 20px;
-          }
         }
       }
     }
