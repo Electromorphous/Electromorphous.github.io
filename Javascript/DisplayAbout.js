@@ -29,7 +29,7 @@ export default function DisplayAbout() {
   place.textContent = " 📍 : Bangalore, India";
   const summary = document.createElement("p");
   summary.textContent =
-    "Hi! I'm a software engineer. I make responsive web applications that are functional yet appealing to use. I also document my experiences with various tools and write solutions for technical problems.";
+    "Hi! I'm a software engineer. I make responsive web applications that are functional and appealing to use. I also document my coding journey and write solutions for technical problems.";
   const techHeader = document.createElement("p");
   techHeader.textContent = " Tools I have experience with... ";
 
