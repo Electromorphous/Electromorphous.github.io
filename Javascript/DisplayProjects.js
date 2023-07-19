@@ -76,7 +76,7 @@ export default function DisplayProjects() {
     makeProject(
       "Pokédex",
       "https://github.com/Electromorphous/Pokedex",
-      "A Pokédex made using the <a href='https://restcountries.com/' target='_blank'>PokéApi</a>.",
+      "A Pokédex made using the <a href='https://pokeapi.co/' target='_blank'>PokéApi</a>.",
       "View app",
       "https://electromorphous.github.io/Pokedex"
     )
