@@ -47,7 +47,7 @@ export default function DisplayLinks() {
   links.appendChild(github);
   links.appendChild(linkedin);
   links.appendChild(hashnode);
-  links.appendChild(twitter);
+  // links.appendChild(twitter);
   // links.appendChild(youtube);
 
   info.appendChild(links);
