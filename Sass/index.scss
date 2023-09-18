@@ -516,6 +516,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      overflow: visible;
 
       a {
         .icon {
@@ -546,6 +547,9 @@ body {
         }
         .fa-hashnode:hover {
           color: $hashnodeBlue;
+        }
+        .fa-dev:hover {
+          color: $devWhite;
         }
         // .fa-twitter:hover {
         //   color: $twitterBlue;

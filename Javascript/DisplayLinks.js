@@ -37,6 +37,7 @@ export default function DisplayLinks() {
     "fa-brands fa-hashnode",
     "https://electroblog.hashnode.dev/"
   );
+  const dev = makeLink("fa-brands fa-dev", "https://dev.to/electromorphous/");
   // const twitter = makeLink(
   //   "fa-brands fa-twitter",
   //   "https://twitter.com/Electromorphous"
@@ -47,6 +48,7 @@ export default function DisplayLinks() {
   links.appendChild(github);
   links.appendChild(linkedin);
   links.appendChild(hashnode);
+  links.appendChild(dev);
   // links.appendChild(twitter);
   // links.appendChild(youtube);
 
