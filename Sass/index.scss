@@ -516,12 +516,12 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      overflow: visible;
 
       a {
         .icon {
           font-size: 50px;
           color: white;
+          padding: 2px 0;
 
           @include responsive(tabletBig) {
             font-size: 40px;
