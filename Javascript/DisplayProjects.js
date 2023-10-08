@@ -84,21 +84,21 @@ export default function DisplayProjects() {
 
   projects.appendChild(
     makeProject(
-      "Pokédex",
-      "https://github.com/Electromorphous/Pokedex",
-      "A Pokédex made using the <a href='https://pokeapi.co/' target='_blank'>PokéApi</a>.",
-      "View app",
-      "https://electromorphous.github.io/Pokedex"
-    )
-  );
-
-  projects.appendChild(
-    makeProject(
       "Countries",
       "https://github.com/Electromorphous/Countries",
       "A WebApp made using the <a href='https://restcountries.com/' target='_blank'>REST Countries API</a>.",
       "View app",
       "https://electromorphous.github.io/Countries"
+    )
+  );
+
+  projects.appendChild(
+    makeProject(
+      "Pokédex",
+      "https://github.com/Electromorphous/Pokedex",
+      "A Pokédex made using the <a href='https://pokeapi.co/' target='_blank'>PokéApi</a>.",
+      "View app",
+      "https://electromorphous.github.io/Pokedex"
     )
   );
 
