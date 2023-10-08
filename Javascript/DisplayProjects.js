@@ -64,6 +64,16 @@ export default function DisplayProjects() {
 
   projects.appendChild(
     makeProject(
+      "DeNotes",
+      "https://github.com/Electromorphous/DeNotes",
+      "World's first fully decentralized note-taking app. Powered by the <a href='https://ipfs.io' target='_blank'>Inter Planetary File System</a> and <a href='https://portal.thirdweb.com/storage' target='_blank'>ThirdWeb</a>.",
+      "View app",
+      "https://denotes.vercel.app"
+    )
+  );
+
+  projects.appendChild(
+    makeProject(
       "CustomWheels",
       "https://github.com/Electromorphous/CustomWheels",
       "A Web application that lets you view and customise 3D models of cars. Made using <a href='https://threejs.org/' target='_blank'>Three.js</a> and <a href='https://www.npmjs.com/package/@react-three/fiber' target='_blank'>react-three</a>.",
