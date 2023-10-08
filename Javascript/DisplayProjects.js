@@ -66,7 +66,7 @@ export default function DisplayProjects() {
     makeProject(
       "DeNotes",
       "https://github.com/Electromorphous/DeNotes",
-      "World's first fully decentralized note-taking app. Powered by the <a href='https://ipfs.io' target='_blank'>Inter Planetary File System</a> and <a href='https://portal.thirdweb.com/storage' target='_blank'>ThirdWeb</a>.",
+      "The first fully decentralized note-taking app. Powered by the <a href='https://ipfs.io' target='_blank'>InterPlanetary File System</a> and <a href='https://portal.thirdweb.com/storage' target='_blank'>ThirdWeb</a>.",
       "View app",
       "https://denotes.vercel.app"
     )
