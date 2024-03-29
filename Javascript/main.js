@@ -85,7 +85,7 @@ const Prompt = () => {
 
   const footer = document.createElement("div");
   footer.className = "footer";
-  footer.innerHTML = "Copyright <span>©</span> 2023";
+  footer.innerHTML = "Copyright <span>©</span> 2024";
 
   repeater.appendChild(footer);
 };
