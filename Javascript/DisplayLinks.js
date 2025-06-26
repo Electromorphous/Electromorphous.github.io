@@ -38,10 +38,10 @@ export default function DisplayLinks() {
     "https://electroblog.hashnode.dev/"
   );
   const dev = makeLink("fa-brands fa-dev", "https://dev.to/electromorphous/");
-  const twitter = makeLink(
-    "fa-brands fa-twitter",
-    "https://twitter.com/Electromorphous"
-  );
+  // const twitter = makeLink(
+  //   "fa-brands fa-twitter",
+  //   "https://twitter.com/Electromorphous"
+  // );
   // const youtube = makeLink("fa-brands fa-youtube", "https://youtu.be/dQw4w9WgXcQ");
 
   links.appendChild(mail);
