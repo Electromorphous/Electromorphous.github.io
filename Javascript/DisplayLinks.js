@@ -49,7 +49,7 @@ export default function DisplayLinks() {
   links.appendChild(linkedin);
   links.appendChild(hashnode);
   links.appendChild(dev);
-  links.appendChild(twitter);
+  // links.appendChild(twitter);
   // links.appendChild(youtube);
 
   info.appendChild(links);
