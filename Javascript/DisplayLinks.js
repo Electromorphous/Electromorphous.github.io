@@ -23,25 +23,25 @@ export default function DisplayLinks() {
 
   const mail = makeLink(
     "fa-solid fa-envelope",
-    "mailto:pstation.474@gmail.com"
+    "mailto:pstation.474@gmail.com",
   );
   const github = makeLink(
     "fa-brands fa-github",
-    "https://github.com/Electromorphous"
+    "https://github.com/Electromorphous",
   );
   const linkedin = makeLink(
     "fa-brands fa-linkedin",
-    "https://www.linkedin.com/in/aseer-uz-zaman-89a8a8187/"
+    "https://www.linkedin.com/in/aseer-uz-zaman-89a8a8187/",
   );
   const hashnode = makeLink(
     "fa-brands fa-hashnode",
-    "https://electroblog.hashnode.dev/"
+    "https://electroblog.hashnode.dev/",
   );
   const dev = makeLink("fa-brands fa-dev", "https://dev.to/electromorphous/");
-  // const twitter = makeLink(
-  //   "fa-brands fa-twitter",
-  //   "https://twitter.com/Electromorphous"
-  // );
+  const twitter = makeLink(
+    "fa-brands fa-twitter",
+    "https://twitter.com/Electromorphius",
+  );
   // const youtube = makeLink("fa-brands fa-youtube", "https://youtu.be/dQw4w9WgXcQ");
 
   links.appendChild(mail);
@@ -49,7 +49,7 @@ export default function DisplayLinks() {
   links.appendChild(linkedin);
   links.appendChild(hashnode);
   links.appendChild(dev);
-  // links.appendChild(twitter);
+  links.appendChild(twitter);
   // links.appendChild(youtube);
 
   info.appendChild(links);
